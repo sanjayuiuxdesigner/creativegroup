@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Creative Group LLP</title>
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-regular.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-100.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-500.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-600.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-700.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-800.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<style>
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 100;
+			src: url('assets/fonts/montserrat-v26-latin-100.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 500;
+			src: url('assets/fonts/montserrat-v26-latin-500.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 600;
+			src: url('assets/fonts/montserrat-v26-latin-600.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 700;
+			src: url('assets/fonts/montserrat-v26-latin-700.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 800;
+			src: url('assets/fonts/montserrat-v26-latin-800.woff2') format('woff2');
+			}
+		</style>
+		<link rel="stylesheet" href="assets/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="scrollto">
+					<div class="logo">
+						<a href="index.html">
+						<img src="assets/img/site-logo.svg" class="img-fluid">
+						</a>
+					</div>
+					<div class="header-btn">
+						<a href="contact.html" class="primary-btn">Consult Online Now</a>
+					</div>
+					<div class="menu">
+						<div class="closebtn" onclick="toggleNav()">
+							<svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 384 512" fill="#fff">
+								<path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3l105.4 105.3c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256z"></path>
+							</svg>
+						</div>
+						<nav>
+							<ul>
+								<li class="dropdown">
+									<a href="firm.html">Firm</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="firm.html">Origin</a></li>
+										<li><a href="philosophy.html">Philosphy</a></li>
+										<li><a href="founder-message.html">Founder's Message</a></li>
+										<li><a href="services.html">Services</a></li>
+										<li><a href="peoples.html">People</a></li>
+										<li><a href="clients.html">Clients</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="project.html">Projects</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="airport.html">Airport</a></li>
+									</ul>
+								</li>
+								<li><a href="awards.html">Awards</a></li>
+								<li class="dropdown">
+									<a href="media.html">Media</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="news.html">News</a></li>
+										<li><a href="publications.html">Publications</a></li>
+										<li><a href="talks.html">Talks</a></li>
+										<li><a href="resources.html">Resources</a></li>
+										<li><a href="newsletters.html">Newsletters</a></li>
+									</ul>
+								</li>
+								<li><a href="career.html">Career</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="blog.html">Blog</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="openbtn" onclick="toggleNav()">
+						<svg width="30" height="30" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+							<path d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32m64 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32m384 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32"></path>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header ends -->
+		<main>
+			<div class="hero">
+				<div class="container">
+					<div class="hero-content">
+						<div>Our Work Is The Expression Of Our Relentless Aspirations To Deliver Sustainable Designs</div>
+						<a href="project.html" class="primary-btn hero-btn">
+							Explore Projects 
+							<svg width="19" height="19" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"/>
+								<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- hero ends -->
+			<section>
+				<div class="container">
+					<div class="row row-gap">
+						<div class="col-lg-6 order-md">
+							<div class="about-us-img">
+								<img src="assets/img/abouts.png" class="img-fluid">
+								<div class="success">
+									<div class="succes-heading">51+</div>
+									<p class="mb-0"><span class="text-white">Years</span> of successful work</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="small-heading">About Company</div>
+							<div class="main-heading">Leading Architecture firm in New Delhi, India</div>
+							<p class="mb-0">CREATIVE GROUP is one of the leading international architecture and design practices based in New Delhi, India that offers services in Architecture and Urban Planning, Project Management, Financial Analysis, Construction Management, Engineering and Building Consultancy.</p>
+							<div class="row row-gap mt-5">
+								<div class="col-md-4">
+									<div class="features">
+										<div class="icons">
+											<img src="assets/img/urban.png" class="img-fluid">
+										</div>
+										<div class="feature-title">Urban Planing</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="features">
+										<div class="icons">
+											<img src="assets/img/urban.png" class="img-fluid">
+										</div>
+										<div class="feature-title">Project Management</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="features">
+										<div class="icons">
+											<img src="assets/img/urban.png" class="img-fluid">
+										</div>
+										<div class="feature-title">Construction Management</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- about us ends -->
+			<section class="project-bg">
+				<div class="container">
+					<div class="row row-gap align-items-center bg-py">
+						<div class="col-lg-9">
+							<div class="small-heading">Latest Projects</div>
+							<div class="main-heading mb-0">Projects From Our Creative Group</div>
+							<p class="mb-0">Explore diverse, award-winning architectural and urban planning projects from Creative Group, shaping global landscapes since 1973</p>
+						</div>
+						<div class="col-lg-3">
+							<a href="project.html" class="primary-btn">See All Projects</a>
+						</div>
+					</div>
+					<div class="projects_slider">
+						<div class="project-cards">
+							<a href="#">
+							<img src="assets/img/project-1.png" class="img-fluid">
+							</a>
+							<div class="projects-content">
+								<div class="projects-title">Airports</div>
+								<a href="airport.html" class="air-name">Swami Vivekanand Aiport Raipur</a>
+							</div>
+						</div>
+						<div class="project-cards">
+							<a href="#">
+							<img src="assets/img/project-2.png" class="img-fluid">
+							</a>
+							<div class="projects-content">
+								<div class="projects-title">Commercial</div>
+								<a href="airport.html" class="air-name">Commercial Complex at Nsp Metro Station, New Delhi</a>
+							</div>
+						</div>
+						<div class="project-cards">
+							<a href="#">
+							<img src="assets/img/project-3.png" class="img-fluid">
+							</a>
+							<div class="projects-content">
+								<div class="projects-title">Corporate</div>
+								<a href="airport.html" class="air-name">Skyoneu Gurgaon, Haryana</a>
+							</div>
+						</div>
+						<div class="project-cards">
+							<a href="#">
+							<img src="assets/img/project-4.png" class="img-fluid">
+							</a>
+							<div class="projects-content">
+								<div class="projects-title">Industrial</div>
+								<a href="airport.html" class="air-name">IIT Kanpur</a>
+							</div>
+						</div>
+						<div class="project-cards">
+							<a href="#">
+							<img src="assets/img/project-1.png" class="img-fluid">
+							</a>
+							<div class="projects-content">
+								<div class="projects-title">Airports</div>
+								<a href="airport.html" class="air-name">Swami Vivekanand Aiport Raipur</a>
+							</div>
+						</div>
+						<div class="project-cards">
+							<a href="#">
+							<img src="assets/img/project-2.png" class="img-fluid">
+							</a>
+							<div class="projects-content">
+								<div class="projects-title">Corporate</div>
+								<a href="airport.html" class="air-name">Skyoneu Gurgaon, Haryana</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- projects ends -->
+			<section class="bg-lighty">
+				<div class="container">
+					<div class="row row-gap align-items-center">
+						<div class="col-lg-5">
+							<div class="counter-heading">
+								<div class="main-heading m-0">Our experience and passion speaks for itself</div>
+								<div></div>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="row row-gap">
+								<div class="col-md-4">
+									<div class="counterup">
+										<div class="counter-num" data-count="325" data-suffix="+">+</div>
+										<p class="mb-0">Satisfied Clients</p>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="counterup">
+										<div class="counter-num" data-count="294" data-suffix="+">+</div>
+										<p class="mb-0">Successful Projects</p>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="counterup">
+										<div class="counter-num" data-count="50" data-suffix="+">+</div>
+										<p class="mb-0">Team Members</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- counter ends -->
+			<section>
+				<div class="container">
+					<div class="flex-cl">
+						<div class="small-heading">Testimonials</div>
+						<div class="main-heading">What Our Clients are Saying</div>
+					</div>
+					<div class="testimonial_slider">
+						<div class="testimonial-items">
+							<p class="mb-0">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<div class="rating">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+							</div>
+							<div class="clients-name">
+								<div>Sasila</div>
+								<small>Happy Clients</small>
+							</div>
+						</div>
+						<div class="testimonial-items">
+							<p class="mb-0">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<div class="rating">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+							</div>
+							<div class="clients-name">
+								<div>Sasila</div>
+								<small>Happy Clients</small>
+							</div>
+						</div>
+						<div class="testimonial-items">
+							<p class="mb-0">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<div class="rating">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+							</div>
+							<div class="clients-name">
+								<div>Sasila</div>
+								<small>Happy Clients</small>
+							</div>
+						</div>
+						<div class="testimonial-items">
+							<p class="mb-0">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<div class="rating">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+							</div>
+							<div class="clients-name">
+								<div>Sasila</div>
+								<small>Happy Clients</small>
+							</div>
+						</div>
+						<div class="testimonial-items">
+							<p class="mb-0">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<div class="rating">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15" fill="#f8bc24">
+									<path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2z"></path>
+								</svg>
+							</div>
+							<div class="clients-name">
+								<div>Sasila</div>
+								<small>Happy Clients</small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- testimonial ends -->
+			<section class="alternative-bg">
+				<div class="container">
+					<div class="row row-gap align-items-center bg-py">
+						<div class="col-lg-9">
+							<div class="small-heading">Blog feed</div>
+							<div class="main-heading mb-0">News & Articles</div>
+						</div>
+						<div class="col-lg-3">
+							<a href="blog.html" class="primary-btn">View All Artcles</a>
+						</div>
+					</div>
+					<div class="row row-gap-3">
+						<div class="col-lg-12 col-md-6">
+							<div class="creative-cards crd-grid">
+								<div class="card-img">
+									<a href="blog-details.html">
+									<img src="https://creative-llp.netlify.app/assets/img/industrial-1.png" class="img-fluid">
+									</a>
+									<div class="calender">
+										<span>05</span>
+										<span>March</span>
+									</div>
+								</div>
+								<div class="creative-crd-content">
+									<a href="airport.html" class="catg">Commercial</a>
+									<a href="blog-details.html" class="ellipsis crd-title">Wood Paneling Ideas for Your Walls That You'll Actually Like</a>
+									<div class="content-details">
+										<a href="#" class="crd-author">Deepak Singh</a>
+										<span>0 Comments</span>
+									</div>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="blog-details.html">
+									<img src="https://creative-llp.netlify.app/assets/img/mass.jpg" class="img-fluid">
+									</a>
+									<div class="calender">
+										<span>07</span>
+										<span>April</span>
+									</div>
+								</div>
+								<div class="creative-crd-content">
+									<a href="airport.html" class="catg">Industrial</a>
+									<a href="blog-details.html" class="ellipsis crd-title">We’re the construction kings, building up great</a>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="blog-details.html">
+									<img src="https://creative-llp.netlify.app/assets/img/cultural.png" class="img-fluid">
+									</a>
+									<div class="calender">
+										<span>31</span>
+										<span>December</span>
+									</div>
+								</div>
+								<div class="creative-crd-content">
+									<a href="airport.html" class="catg">Interior</a>
+									<a href="blog-details.html" class="ellipsis crd-title">We’ll nail your next project, because nobody wants</a>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="blog-details.html">
+									<img src="https://creative-llp.netlify.app/assets/img/institureal.jpg" class="img-fluid">
+									</a>
+									<div class="calender">
+										<span>21</span>
+										<span>August</span>
+									</div>
+								</div>
+								<div class="creative-crd-content">
+									<a href="airport.html" class="catg">Architecture</a>
+									<a href="blog-details.html" class="ellipsis crd-title">Creating quality urban lifestyles, building</a>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- blog ends -->
+			<div class="cta-bg">
+				<div class="container">
+					<div class="row row-gap">
+						<div class="col-lg-6">
+							<div class="small-heading text-white">Work With Us</div>
+							<div class="main-heading mb-0 text-white">Begin Your Customer Journey With Us</div>
+							<a href="contact.html" class="primary-btn hero-btn">
+								Get Started Today! 
+								<svg width="19" height="19" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"/>
+									<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- cta ends -->
+		</main>
+		<footer>
+			<div class="container">
+				<div class="row row-gap">
+					<div class="col-lg-8">
+						<div class="row row-gap">
+							<div class="col-md-4">
+								<div class="footer-title">Services</div>
+								<ul>
+									<li><a href="firm.html">Origin</a></li>
+									<li><a href="philosophy.html">Philosophy</a></li>
+									<li><a href="founder-message.html">Founder Message</a></li>
+									<li><a href="peoples.html">Peoples</a></li>
+									<li><a href="clients.html">Clients</a></li>
+									<li><a href="awards.html">Awards</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<div class="footer-title">Company</div>
+								<ul>
+									<li><a href="media.html">Media</a></li>
+									<li><a href="news.html">News</a></li>
+									<li><a href="publications.html">Publications</a></li>
+									<li><a href="talks.html">Talks</a></li>
+									<li><a href="resources.html">Resources</a></li>
+									<li><a href="newsletters.html">Newsletter</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<div class="footer-title">Journal</div>
+								<ul>
+									<li><a href="single.html">Single Page</a></li>
+									<li><a href="blog-details.html">Blog Details</a></li>
+									<li><a href="career.html">Careers</a></li>
+									<li><a href="contact.html">Contact us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<form class="footer-form">
+							<div class="top-form">
+								<div class="form-title">Sign up to our Newsletter</div>
+								<p class="mb-0">Stay up-to date with the Latest News, Announcements and Articles</p>
+								<input type="email" name="" placeholder="Enter Email Id*" required>
+								<button class="primary-btn" type="submit">Subscribe Now!</button>
+							</div>
+							<div class="social">
+								<ul>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+												<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+												<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+												<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+												<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"/>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer-btm">© 2024 Creative Group. All Rights Reserved.</div>
+		</footer>
+		<div id="btt-btn">
+			<span id="progress-value">
+				<svg width="15" height="15" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.134.366a1.25 1.25 0 0 0-1.768 0l-6 6a1.25 1.25 0 1 0 1.768 1.768L6 4.268V17.25a1.25 1.25 0 1 0 2.5 0V4.268l3.866 3.866a1.25 1.25 0 0 0 1.768-1.768z" fill="#fff"></path>
+				</svg>
+			</span>
+		</div>
+		<!-- js attached -->
+		<script defer src="assets/js/jquery.js"></script>
+		<script defer src="assets/js/slick.js"></script>
+		<script defer src="assets/js/main.js"></script>
+	</body>
+</html>

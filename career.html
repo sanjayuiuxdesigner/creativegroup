@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Career</title>
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-regular.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-100.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-500.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-600.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-700.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-800.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<style>
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 100;
+			src: url('assets/fonts/montserrat-v26-latin-100.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 500;
+			src: url('assets/fonts/montserrat-v26-latin-500.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 600;
+			src: url('assets/fonts/montserrat-v26-latin-600.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 700;
+			src: url('assets/fonts/montserrat-v26-latin-700.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 800;
+			src: url('assets/fonts/montserrat-v26-latin-800.woff2') format('woff2');
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="scrollto">
+					<div class="logo">
+						<a href="index.html">
+						<img src="assets/img/site-logo.svg" class="img-fluid">
+						</a>
+					</div>
+					<div class="header-btn">
+						<a href="contact.html" class="primary-btn">Consult Online Now</a>
+					</div>
+					<div class="menu">
+						<div class="closebtn" onclick="toggleNav()">
+							<svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 384 512" fill="#fff">
+								<path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3l105.4 105.3c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256z"></path>
+							</svg>
+						</div>
+						<nav>
+							<ul>
+								<li class="dropdown">
+									<a href="firm.html">Firm</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="firm.html">Origin</a></li>
+										<li><a href="philosophy.html">Philosphy</a></li>
+										<li><a href="founder-message.html">Founder's Message</a></li>
+										<li><a href="services.html">Services</a></li>
+										<li><a href="peoples.html">People</a></li>
+										<li><a href="clients.html">Clients</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="project.html">Projects</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="airport.html">Airport</a></li>
+									</ul>
+								</li>
+								<li><a href="awards.html">Awards</a></li>
+								<li class="dropdown">
+									<a href="media.html">Media</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="news.html">News</a></li>
+										<li><a href="publications.html">Publications</a></li>
+										<li><a href="talks.html">Talks</a></li>
+										<li><a href="resources.html">Resources</a></li>
+										<li><a href="newsletters.html">Newsletters</a></li>
+									</ul>
+								</li>
+								<li><a href="career.html">Career</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="blog.html">Blog</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="openbtn" onclick="toggleNav()">
+						<svg width="30" height="30" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+							<path d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32m64 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32m384 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32"></path>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header ends -->
+		<div class="hero-inner">
+			<div class="inner-block-img">
+				<img src="assets/img/cruise.png" class="img-fluid">
+			</div>
+		</div>
+		<!-- hero ends -->
+		<main>
+			<section class="mt-0">
+				<div class="container">
+					<div class="row row-gap align-items-center">
+						<div class="col-lg-5">
+							<div class="inner-page-block">
+								<p class="flexx-breadcrumbs">
+									<span><a href="#">Home</a></span>
+									<span>/</span>
+									<span><a href="#">Career</a></span>
+								</p>
+								<div class="block-title mb-3">Creative Group offers Excellent Opportunities for Enthusiasts, with Dedication and Passion for their Field of Work.</div>
+								<a href="#see" class="primary-btn hero-btn m-0">
+									See Career 
+									<svg width="19" height="19" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"></path>
+										<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="ps-2">
+								<div class="main-heading">Career</div>
+								<p class="mb-0">Creative Group offers excellent job opportunities for enthusiasts, with dedication and passion for their field of work. The culture of the practice is open and dynamic; we focus on selecting the best candidates and help them in reaching their full potentials with a supportive working environment with diverse roles and projects of various scales.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- endds -->
+			<section class="bg-lighty">
+				<div class="container">
+					<div class="h2">Our Benefits</div>
+					<div class="row row-gap">
+						<div class="col-lg-4 col-md-6">
+							<div class="benifit-card">
+								<div class="h5 m-0">
+									Flexible Work
+								</div>
+								<p>Enjoy a balanced work-life with adaptable hours and remote options, allowing you to manage personal priorities while meeting professional goals effectively.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="benifit-card">
+								<div class="h5 m-0">
+									Time Off
+								</div>
+								<p>Recharge with generous paid time off, including vacation, holidays, and personal days, supporting your well-being and work-life balance.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="benifit-card">
+								<div class="h5 m-0">
+									Professional Growth
+								</div>
+								<p>Advance your career with continuous learning opportunities, mentorship programs, and skill development resources, designed to support your professional growth and long-term success.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="benifit-card">
+								<div class="h5 m-0">
+									Health and Well-being
+								</div>
+								<p>Benefit from comprehensive health plans, wellness programs, and mental health support, all designed to help you stay physically and mentally well at work and beyond.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="benifit-card">
+								<div class="h5 m-0">
+									Family Care
+								</div>
+								<p>Access family-friendly benefits, including parental leave, childcare support, and flexible scheduling, so you can prioritize both your career and your loved ones.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="benifit-card">
+								<div class="h5 m-0">
+									Festive Culture
+								</div>
+								<p>Celebrate together with team events, holiday gatherings, and cultural festivities, creating a lively, inclusive workplace where everyone feels connected and valued.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- benifits ends -->
+			<section id="see">
+				<div class="container">
+					<div class="accordions">
+						<div class="h2">Current Opening</div>
+						<details>
+							<summary>
+								ARCHITECTS
+							</summary>
+							<div class="content">
+								<ul class="project-list">
+									<li>Should have experience in managing a team of Architects and delivering project independently.</li>
+									<li>Aptitude towards design and command over 3D software.</li>
+									<li>Experience in following up on a project from inception to execution with a sensitive eye towards detail.</li>
+									<li>Ability to work on fast-paced large scale projects.</li>
+									<li>Creating, presenting and implementing design concepts according to a client's needs</li>
+									<li>Interacting with clients, understanding requirements and working out interior solutions for the project</li>
+									<li>Preparing technical drawings</li>
+									<li>Preparing client presentations with products, technical details, recommendations.</li>
+								</ul>
+								<div class="sublist">
+									<p>
+										<strong>Experience</strong>
+									</p>
+									<ul>
+										<li>3 To 7 Years.</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Key Skills</strong>
+									</p>
+									<ul class="project-list">
+										<li>CAD</li>
+										<li>Working Drawings</li>
+										<li>Architecture</li>
+										<li>Detail Drawings</li>
+										<li>REVIT</li>
+										<li>Design</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Salary</strong>
+									</p>
+									<ul class="project-list">
+										<li>As per industry norms</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Vacancies</strong>
+									</p>
+									<ul class="project-list">
+										<li>6</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Qualifications</strong>
+									</p>
+									<ul class="project-list">
+										<li>B. Arch / M.Arch</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Desired Candidate Profile</strong>
+									</p>
+									<ul class="project-list">
+										<li>Preferably having a Master's Degree</li>
+									</ul>
+								</div>
+								<a href="#jobForm" class="primary-btn mt-2">Apply Now</a>
+							</div>
+						</details>
+						<details>
+							<summary>
+								INTERNS ( Duration: Minimum 6 months)
+							</summary>
+							<div class="content">
+								<div class="sublist m-0">
+									<p>
+										<strong>Job Description / Responsibilities</strong>
+									</p>
+									<ul class="project-list">
+										<li>Produces conceptual plans, renderings, and documents.</li>
+										<li>Utilizes computer-assisted design software and equipment to prepare project designs and plans.</li>
+										<li>Produces construction documents in AutoCAD and Revit.</li>
+										<li>Interfaces with Director of Architecture and project managers.</li>
+										<li>Works in tandem with highly collaborative multi-discipline design teams.</li>
+										<li>Assists in research and coordination of materials and products for project specifications.</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Industry Type</strong>
+									</p>
+									<ul class="project-list">
+										<li>Architecture / Interior Design</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Functional Area</strong>
+									</p>
+									<ul class="project-list">
+										<li>Architecture, Interior Design</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Education</strong>
+									</p>
+									<ul class="project-list">
+										<li>B.Arch - Architecture</li>
+									</ul>
+								</div>
+								<a href="#jobForm" class="primary-btn mt-2">Apply Now</a>
+							</div>
+						</details>
+						<details>
+							<summary>
+								BIM DESIGNER / BIM ARCHITECT
+							</summary>
+							<div class="content">
+								<ul class="project-list">
+									<li>Hands on experience on BIM/ Auto CAD/Revit.</li>
+									<li>BIM Coordination and daily management of BIM project data sets.</li>
+									<li>Provide technical support for Auto CAD and Revit Building Suit software applications.</li>
+									<li>Thorough knowledge of Revit advanced modeling and documentation processes.</li>
+									<li>Should be able to apply best BIM practices on every stage of a project.</li>
+									<li>Thorough knowledge of and compliance with Creative Groups procedures and standards.</li>
+								</ul>
+								<div class="sublist">
+									<p>
+										<strong>Qualities and skills required</strong>
+									</p>
+									<ul class="project-list ">
+										<li>Able to demonstrate the ability to undertake the above responsibilities</li>
+										<li>In-depth working knowledge of Auto CAD and Revit up to date</li>
+										<li>Experience of working in a project coordination role for CAD/BIM application.</li>
+										<li>Excellent organizational skills.</li>
+										<li>Self-motivated and able to take responsibility.</li>
+										<li>Resilient to cope with conflicting demands, able to prioritize duties and work effectively under pressure while remaining calm and professional at all the times.</li>
+										<li>Able to demonstrate initiative and a proactive approach to daily tasks.</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Experience</strong>
+									</p>
+									<ul class="project-list">
+										<li>2 to 4 years</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Role</strong>
+									</p>
+									<ul class="project-list">
+										<li>Project Architect</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Industry Type</strong>
+									</p>
+									<ul class="project-list">
+										<li>Architecture / Interior Design</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Functional Area</strong>
+									</p>
+									<ul class="project-list">
+										<li>Architecture, Interior Design</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Employment Type</strong>
+									</p>
+									<ul class="project-list">
+										<li>Permanent</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Role Category</strong>
+									</p>
+									<ul class="project-list">
+										<li>Architectural Services</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Education</strong>
+									</p>
+									<ul class="project-list">
+										<li><strong>UG:</strong> B.Arch - Architecture</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Key Skills</strong>
+									</p>
+									<ul class="project-list">
+										<li>AutoCAD</li>
+										<li>REVIT</li>
+										<li>Bim Design</li>
+										<li>CAD Application</li>
+										<li>Software Project Coordination</li>
+										<li>Software Project Coordination</li>
+										<li>Technical Support</li>
+									</ul>
+								</div>
+								<a href="#jobForm" class="primary-btn mt-2">Apply Now</a>
+							</div>
+						</details>
+						<details>
+							<summary>
+								ACCOUNTS MANAGER
+							</summary>
+							<div class="content">
+								<ul class="project-list">
+									<li>Candidate must be well versed in TALLY, Bank Reconciliation.</li>
+									<li>Maintenance of records of Payments &amp; Receipts, Book Keeping, Voucher Maintenance.</li>
+									<li>Knowledge about GST, TDS and Income Tax.</li>
+									<li>Coordinate &amp; follow-up with clients and consultants.</li>
+									<li>Independently handle the Salary computation work.</li>
+								</ul>
+								<div class="sublist">
+									<p>
+										<strong>Experience</strong>
+									</p>
+									<ul>
+										<li>3 To 5 Years.</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Salary</strong>
+									</p>
+									<ul class="project-list">
+										<li>As per industry norms</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Candidate’s Profile</strong>
+									</p>
+									<ul class="project-list">
+										<li>B.Com/ M.Com candidate with minimum 2-3 years of experience in the related field must only apply.</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Role</strong>
+									</p>
+									<ul class="project-list">
+										<li>Accounts Manager</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Industry Type</strong>
+									</p>
+									<ul class="project-list">
+										<li>Architecture / Interior Design</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Functional Area</strong>
+									</p>
+									<ul class="project-list">
+										<li>Accounts</li>
+										<li>Finance</li>
+										<li>Tax</li>
+										<li>Company Secretary</li>
+										<li>Audit</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Role Category</strong>
+									</p>
+									<ul class="project-list">
+										<li>Accounts</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Employment Type</strong>
+									</p>
+									<ul class="project-list">
+										<li>Permanent</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Education</strong>
+									</p>
+									<ul class="project-list">
+										<li><strong>UG:</strong> B.Com</li>
+										<li><strong>PG:</strong> Any Postgraduate - Any Specialization</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Key Skills</strong>
+									</p>
+									<ul class="project-list">
+										<li>Accounting</li>
+										<li>Income Tax</li>
+										<li>TDS</li>
+										<li>Bank Reconciliation</li>
+										<li>Accounts Payable</li>
+										<li>General Ledger</li>
+										<li>Accounting</li>
+										<li>Bank Accounting</li>
+										<li>Voucher Making</li>
+										<li>Accounts Handling</li>
+										<li>Tally</li>
+										<li>ERP</li>
+										<li>Financial Reporting</li>
+										<li>Banking</li>
+										<li>Financial Operations</li>
+										<li>Budgeting</li>
+									</ul>
+								</div>
+								<a href="#jobForm" class="primary-btn mt-2">Apply Now</a>
+							</div>
+						</details>
+						<details>
+							<summary>
+								QUANTITY SURVEYOR/CIVIL ENGINEER
+							</summary>
+							<div class="content">
+								<div class="sublist m-0">
+									<ul class="project-list">
+										<li>Valuation of running account bills submitted by contractor</li>
+										<li>Assisting in preparation of Rate analysis &amp; recommendation to client for non BOQ items.
+										</li>
+										<li>Assisted in preparing detailed estimate for the project through,BOQs specifications,GFC &amp; tentative drawings.</li>
+										<li>Ensuring project meet agreed specifications, budgets and timescales.</li>
+										<li>Schedule and track assignments, preparing daily, weekly project progress status reports.
+										</li>
+										<li>Project Quantity Take off, comparing the same with Tender drawings &amp; BOQ for any variations.</li>
+										<li>PPreparation of Bill of Quantities, Item Specifications and preparation of preliminary Cost of projects.</li>
+										<li>Preparing, negotiating and analyzing costs for tenders and contracts.</li>
+										<li>Bill Checking as per site/drawing.</li>
+										<li>Contractual correspondences &amp; Co-ordination with the clients and Architects.</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Should know the following software</strong>
+									</p>
+									<ul class="project-list">
+										<li>Ms Office</li>
+										<li>AutoCAD</li>
+										<li>Revit Architecture</li>
+										<li>3DS MAX Studio</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Experience</strong>
+									</p>
+									<ul class="project-list">
+										<li>Min 3-7 Years</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Role</strong>
+									</p>
+									<ul class="project-list">
+										<li>Other</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Industry Type</strong>
+									</p>
+									<ul class="project-list">
+										<li>Architecture / Interior Design</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Employment Type</strong>
+									</p>
+									<ul class="project-list">
+										<li>Permanent</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Education</strong>
+									</p>
+									<ul class="project-list">
+										<li><strong>UG:</strong> B.Tech/B.E-Civil</li>
+										<li><strong>PG:</strong> M.Tech-Civil</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Key Skills</strong>
+									</p>
+									<ul class="project-list">
+										<li>Quantity Surveyor Activities</li>
+										<li>Boq Preparation</li>
+										<li>Tender Estimation</li>
+										<li>Surveying</li>
+										<li>QS</li>
+										<li>Estimation</li>
+										<li>Cost Estimation</li>
+										<li>Bid Evaluation</li>
+										<li>Detailed Project Report</li>
+									</ul>
+								</div>
+								<a href="#jobForm" class="primary-btn mt-2">Apply Now</a>
+							</div>
+						</details>
+						<details>
+							<summary>
+								BUSINESS DEVELOPMENT EXECUTIVE
+							</summary>
+							<div class="content">
+								<div class="sublist m-0">
+									<ul class="project-list">
+										<li>Identify potential clients for Architecture &amp; Engineering Consultancy in the Real Estate, Education and Corporate space.</li>
+										<li>Arrange introductory meetings with top management.</li>
+										<li>Prepare and present proposals and follow up to win new projects.</li>
+										<li>Track Tenders/RFPs for new bids / design competitions.</li>
+										<li>Manage the bidding process, form JVs/Consortiums with partner firms, prepare bid documents, follow-up till bid submission.</li>
+										<li>Scan selected target markets for opportunities and identify partners (local/international) for strategic tie-ups.</li>
+										<li>Form MoUs / JVs with Architecture / Engineering / Infrastructure firms to expand geographic/sectoral reach and firm capabilities.</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Experience</strong>
+									</p>
+									<ul class="project-list">
+										<li>Min 2-3 years</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Salary</strong>
+									</p>
+									<ul class="project-list">
+										<li>As per industry norms</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Candidate’s Profile</strong>
+									</p>
+									<ul class="project-list">
+										<li>Prior similar experience demonstrated skills for Architecture/Engineering/Infrastructure firms shall be a plus.</li>
+										<li>Excellent speaking presentation skills.</li>
+										<li>Excellent networking skills with the ability to establish contact at MD's and build relationships to win new projects.</li>
+										<li>Self-motivated willing to learn/execute various tasks to meet deadlines.</li>
+									</ul>
+								</div>
+								<div class="sublist">
+									<p>
+										<strong>Key Skills</strong>
+									</p>
+									<ul class="project-list">
+										<li>event management</li>
+										<li>PR</li>
+										<li>Public Relations</li>
+										<li>Media Relations</li>
+										<li>Blogs</li>
+										<li>Articles</li>
+										<li>Media Strategy</li>
+										<li>Advertising</li>
+										<li>Content Writting</li>
+										<li>Marketing</li>
+										<li>Promotions</li>
+										<li>Corporate Communication</li>
+										<li>Article Writting</li>
+										<li>Internal Branding</li>
+									</ul>
+								</div>
+								<a href="#jobForm" class="primary-btn mt-2">Apply Now</a>
+							</div>
+						</details>
+						<p>
+							Interested applicants may send an email with subject "/" along with a PDF copy of resume and samples of their work to:
+						</p>
+						<a href="mailto:careers@creativegroup.co.in">careers@creativegroup.co.in</a>
+						<p>
+							No hand-delivered or couriered applications will be accepted. Due to a large number of applications received, we cannot always acknowledge individual applicants.
+						</p>
+					</div>
+				</div>
+			</section>
+			<!-- faq ends -->
+			<section>
+				<div class="container">
+					<div class="h2" id="jobForm">Job Application Form</div>
+					<p class="mb-3">Please fill in the form to apply for a position with our company.</p>
+					<div class="row align-items-center">
+						<div class="col-lg-7">
+							<form class="contact-form mt-5">
+								<div class="row row-gap">
+									<div class="col-md-6">
+										<label>Full Name <sup>*</sup></label>
+										<input type="text" name="name" placeholder="Enter Your Name Here" required="">
+									</div>
+									<div class="col-md-6">
+										<label>Email Address <sup>*</sup></label>
+										<input type="email" name="email" placeholder="Enter Your Name Here" required="">
+									</div>
+									<div class="col-md-6">
+										<label>Phone <sup>*</sup></label>
+										<input type="text" name="number" placeholder="Enter Your Number Here" required="">
+									</div>
+									<div class="col-md-6">
+										<label>Upload Resume<sup>*</sup></label>
+										<input type="file" name="budget" placeholder="" required="">
+									</div>
+									<div class="col-lg-12">
+										<label>Cover Letter<sup>*</sup></label>
+										<textarea type="text" name="message" placeholder="Enter Your Message Here" class="mb-0" rows="5" required=""></textarea>
+									</div>
+									<div class="col-lg-12">
+										<button type="submit" class="primary-btn">Apply Now</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-lg-5 text-center">
+							<img src="assets/img/contact-side.png" class="img-fluid" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div class="cta-bg">
+			<div class="container">
+				<div class="row row-gap">
+					<div class="col-lg-6">
+						<div class="small-heading text-white">Work With Us</div>
+						<div class="main-heading mb-0 text-white">Begin Your Customer Journey With Us</div>
+						<a href="contact.html" class="primary-btn hero-btn mt-4">
+							Get Started Today! 
+							<svg width="19" height="19" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"/>
+								<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- cta ends -->
+		<footer>
+			<div class="container">
+				<div class="row row-gap">
+					<div class="col-lg-8">
+						<div class="row row-gap">
+							<div class="col-md-4">
+								<div class="footer-title">Services</div>
+								<ul>
+									<li><a href="firm.html">Origin</a></li>
+									<li><a href="philosophy.html">Philosophy</a></li>
+									<li><a href="founder-message.html">Founder Message</a></li>
+									<li><a href="peoples.html">Peoples</a></li>
+									<li><a href="clients.html">Clients</a></li>
+									<li><a href="awards.html">Awards</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<div class="footer-title">Company</div>
+								<ul>
+									<li><a href="media.html">Media</a></li>
+									<li><a href="news.html">News</a></li>
+									<li><a href="publications.html">Publications</a></li>
+									<li><a href="talks.html">Talks</a></li>
+									<li><a href="resources.html">Resources</a></li>
+									<li><a href="newsletters.html">Newsletter</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<div class="footer-title">Journal</div>
+								<ul>
+									<li><a href="single.html">Single Page</a></li>
+									<li><a href="blog-details.html">Blog Details</a></li>
+									<li><a href="career.html">Careers</a></li>
+									<li><a href="contact.html">Contact us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<form class="footer-form">
+							<div class="top-form">
+								<div class="form-title">Sign up to our Newsletter</div>
+								<p class="mb-0">Stay up-to date with the Latest News, Announcements and Articles</p>
+								<input type="email" name="" placeholder="Enter Email Id*" required>
+								<button class="primary-btn" type="submit">Subscribe Now!</button>
+							</div>
+							<div class="social">
+								<ul>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+												<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+												<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+												<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+												<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"/>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer-btm">© 2024 Creative Group. All Rights Reserved.</div>
+		</footer>
+		<div id="btt-btn">
+			<span id="progress-value">
+				<svg width="15" height="15" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.134.366a1.25 1.25 0 0 0-1.768 0l-6 6a1.25 1.25 0 1 0 1.768 1.768L6 4.268V17.25a1.25 1.25 0 1 0 2.5 0V4.268l3.866 3.866a1.25 1.25 0 0 0 1.768-1.768z" fill="#fff"></path>
+				</svg>
+			</span>
+		</div>
+		<!-- js attached -->
+		<script defer src="assets/js/jquery.js"></script>
+		<script defer src="assets/js/slick.js"></script>
+		<script defer src="assets/js/main.js"></script>
+	</body>
+</html>

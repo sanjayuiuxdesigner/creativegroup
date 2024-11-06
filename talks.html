@@ -1,0 +1,2513 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Talks</title>
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-regular.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-100.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-500.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-600.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-700.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-800.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<style>
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 100;
+			src: url('assets/fonts/montserrat-v26-latin-100.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 500;
+			src: url('assets/fonts/montserrat-v26-latin-500.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 600;
+			src: url('assets/fonts/montserrat-v26-latin-600.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 700;
+			src: url('assets/fonts/montserrat-v26-latin-700.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 800;
+			src: url('assets/fonts/montserrat-v26-latin-800.woff2') format('woff2');
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="scrollto">
+					<div class="logo">
+						<a href="index.html">
+						<img src="assets/img/site-logo.svg" class="img-fluid">
+						</a>
+					</div>
+					<div class="header-btn">
+						<a href="contact.html" class="primary-btn">Consult Online Now</a>
+					</div>
+					<div class="menu">
+						<div class="closebtn" onclick="toggleNav()">
+							<svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 384 512" fill="#fff">
+								<path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3l105.4 105.3c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256z"></path>
+							</svg>
+						</div>
+						<nav>
+							<ul>
+								<li class="dropdown">
+									<a href="firm.html">Firm</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="firm.html">Origin</a></li>
+										<li><a href="philosophy.html">Philosphy</a></li>
+										<li><a href="founder-message.html">Founder's Message</a></li>
+										<li><a href="services.html">Services</a></li>
+										<li><a href="peoples.html">People</a></li>
+										<li><a href="clients.html">Clients</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="project.html">Projects</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="airport.html">Airport</a></li>
+									</ul>
+								</li>
+								<li><a href="awards.html">Awards</a></li>
+								<li class="dropdown">
+									<a href="media.html">Media</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="news.html">News</a></li>
+										<li><a href="publications.html">Publications</a></li>
+										<li><a href="talks.html">Talks</a></li>
+										<li><a href="resources.html">Resources</a></li>
+										<li><a href="newsletters.html">Newsletters</a></li>
+									</ul>
+								</li>
+								<li><a href="career.html">Career</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="blog.html">Blog</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="openbtn" onclick="toggleNav()">
+						<svg width="30" height="30" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+							<path d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32m64 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32m384 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32"></path>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header ends -->
+		<div class="hero-inner">
+			<div class="inner-block-img">
+				<img src="assets/img/Belgrade.jpg" class="img-fluid">
+			</div>
+		</div>
+		<!-- hero ends -->
+		<main>
+			<section class="mt-0">
+				<div class="container">
+					<div class="row row-gap align-items-center">
+						<div class="col-lg-5">
+							<div class="inner-page-block">
+								<p class="flexx-breadcrumbs">
+									<span><a href="#">Home</a></span>
+									<span>/</span>
+									<span><a href="#">Talks</a></span>
+								</p>
+								<div class="block-title">Leaders share experiences globally, bridging gaps between disciplines.</div>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="ps-2">
+								<div class="main-heading">Talks</div>
+								<p class="mb-0">Leaders deliver talks and conferences across the Globe, sharing their experiences with the fraternity thus bridging the gap between mutliple disciplines.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mt-5">
+				<div class="container">
+					<div class="row row-gap-3 bg-py">
+						<div class="col-lg-12">
+							<div class="small-heading">Talks</div>
+							<div class="main-heading">Talks | Seminars | Conferences | Events</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/IMG_0596.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>21 Jan 2020</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Guest Lecture at Chandigarh University </a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Chandigarh University</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/ibc.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>7 Jan 2020</p>
+									<a href="blog-details.html" class="ellipsis crd-title">IBC Paper Presentation 'Development of New Greenfield Townships'</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Vigyan Bhawan</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/WhatsApp_Image_2020-01-06_at_8.08.59_AM_(3).jpeg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>4 Jan 2020</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Second National Conference on Sustainability in Built Environment</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Hyderabad</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/WhatsApp_Image_2020-01-02_at_8.15.32_AM.jpeg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>3 Jan 2020</p>
+									<a href="blog-details.html" class="ellipsis crd-title">International Conference on Sustainable Architecture, Technologies and Built Environment</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Thanjavur</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/WhatsApp_Image_2019-11-28_at_6.39.51_PM_(1).jpeg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>28 Nov 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Prof. Shah as Jury Member for Manav Rachna College</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Manav Rachna University</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/75289037_2566544466913499_37933868417810432_o.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>16 Nov 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Guest Lecture by Prof. Charanjit Shah</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Sangam Saket</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/5.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>26 Sep 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Project Heads, Architects, Consultants Conclave - PACC</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Grand Hyatt, Dubai</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/22.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>20 Sep 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">FOAID - Festival of Architecture &amp; Interior Designing - 2019</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>NSIC, Okhla</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Untitled-1.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>19 Sep 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">3rd International Galvanizing Conference</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Le Merdian, New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/WhatsApp_Image_2019-08-10_at_5.06.28_PM.jpeg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>13 Aug 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Guest Lecture on Multimodal Transit Hubs by Prof. Charanjit Shah</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>LPU Punjab</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/EAqYvmmUYAEwVz7.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>9 Aug 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Presentation at iDAC Intelligence Series, Delhi Chapter</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/unnamed.png" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>9 Aug 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Conference at GICEA, Gujarat Institue of Civil Engineers and Architects</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Ahmedabad, Gujarat</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/download.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>8 Aug 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">GEMS ASSOCHAM conference on Holistic Approach in Constructing Sustainable Buildings</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Ahmedabad, Gujarat</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/images.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>30 July 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Lecture on Integrated Design Approach by Prof. Charanjit Singh Shah</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Apeejay College, Noida</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/images.png" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>20 July 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">KeyNote Speaker at DesignConfab</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Chandigarh, Punjab</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Invite_SHF.png" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>19 July 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Workshop 9 on Large Span Structures by Smart Habitat Foundation</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/download.png" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>3 July 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">3rd Annual Airport Modernization Summit 2019</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Bangalore</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/2019_6$largeimg03_Monday_2019_080711281.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>2 June 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Keynote at Engage by Prof. Charanjit Singh Shah</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Ludhiana, Punjab</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/112.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>29 May 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Workshop 8 on Heritage Conservation by Smart Habitat Foundation</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/acce_4.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>10 May 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Prof. Charanjit Shah Keynote at National Seminar &amp; Exhibition on Global Trends in Concrete</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Bangalore</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/IMG-20190522-WA0023.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>29 Apr 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Lecture at Sunderdeep College by Prof. Charanjit Singh Shah</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Ghaziabad</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/23-04-2019_(Guru_Garth_Sahib_Bawan)_(35).JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>23 Apr 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Guest Lecture at Guru Nanak Dev University by Prof. Charanjit Singh Shah</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Amritsar, Punjab</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/3.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>19 Mar 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Lecture at CEPT by Prof. Charanjit Singh Shah</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Ahmedabad, Gujarat</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/IMG-20190316-WA0014.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>16 Mar 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Ar. Gurpreet Singh Shah at Talk of the Town</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/RAM_2699.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>27 Feb 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Prof. Charanjit Singh Shah seminar at Beat the Fire by Aludecor</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>28 Jan 2019</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Architect Speaks Episode 6 hosted by SONA, Nepal
+									</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Kathmandu Nepal</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/49899898_2347803408787607_293509668347576320_o.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>20 Dec 2018</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Ar. Gurpreet Singh's Keynote Speech at Emerging Trends in Green And Efficient Rail Transit Systems</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Le Meridian, New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Ar_Charanjit_Shah_1.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>30 Jan 2018</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Rizvi College of Architecture, Mumbai</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Ahmedabad, Gujarat</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/DSC_0147.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>22 Jan 2018</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Indo-Russian Conclave</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Chhattarpur Road, New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/7Thumbnail.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>12 Jan 2018</p>
+									<a href="blog-details.html" class="ellipsis crd-title">National Seminar on Architecture Theory and Praxis</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Ahmedabad, Gujarat</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/6Thumbnail.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>9 Dec 2017</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Guest Speaker at IIA National Convention</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Bhubaneshwar, Orissa</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/4Thumbnail.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>24 Nov 2017</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Chief Guest at IIA Ludhiana</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>IIA, Northern Chapter, Ludhiana</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/4Thumbnail.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>13 Nov 2017</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Chief Guest at Srijan 2017</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Ambala</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/3Thumbnail.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>8 Nov 2017</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Lecture at SPA Vijaywada</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Vijaywada</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/3Thumbnail.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>25 Oct 2017</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Guest of Honor at ZoNASA</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>SRM University, Chennai</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/2Thumbnail.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>25 Oct 2017</p>
+									<a href="blog-details.html" class="ellipsis crd-title">7th Modern Airport Asia Series</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Sheraton Hotel, New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Thumbnail.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>6 Sep 2017</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Guest Lecture at SPA Delhi</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Thumbnail_Image.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>9 Aug 2017</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Lecture at Apeejay College of Architecture, Noida</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Noida</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Webp.net-resizeimage_(2).jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>12 July 2017</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Redefining Indian Smart and Sustainable Cities</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/2SCE_2016_Thumbnail.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>11 May 2016</p>
+									<a href="blog-details.html" class="ellipsis crd-title">2nd Smart Cities India Expo 2016</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Pragati Maidan</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/10th_Annual_Thumbnail.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>29 Jan 2016</p>
+									<a href="blog-details.html" class="ellipsis crd-title">10th Annual Conference on Airports</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/The_big_5_-_Thumbnail.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<!-- <p>9th August 2017</p> -->
+									<a href="blog-details.html" class="ellipsis crd-title">The Big 5 Summit</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Dubai World Trade Center</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/GBC-_Thumbnail.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>19-21 Nov 2015</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Green Buildings Congress</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Gandhinagar</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/gss1.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>31 Oct 2015</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Urjavaran 2015</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Indore</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Thumbnail_Lucknow.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>30 Sep 2015</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Conference on Smart Cities</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Lucknow</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Comp_Thumbnail.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>26 Sep 2015</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Architecture Ideas 2.0 - FOAID 2015</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Hotel Lalit, New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/FOAID_-_Thumbnail_image.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>26 Sep 2015</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Festival of Architecture and Interior Design (FOAID 2015)</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Hotel Lalit, New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Thumbnail_-_PHD.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>11 Aug 2015</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Smart Cities and Urban Transformation</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>PHD Chamber</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Mumbai_Thumbnail.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>29 July 2015</p>
+									<a href="blog-details.html" class="ellipsis crd-title">7th Real Estate Conclave</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Mumbai</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/SSCS_-_Delhi_-_Menu.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>15 July 2015</p>
+									<a href="blog-details.html" class="ellipsis crd-title">SSCS New Delhi Chapter</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Hotel Shangri La, New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/image5-Thumbnail.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>20-22 May 2015</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Smart Cities India 2015</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Pragati Maidan</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Charanjeet_Shah_-_Thumbnail.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>15 May 2015</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Global Green Summit Advisory Board Meeting</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Taj Palace, Chanakya Puri</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Website_Menu.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>22 Apr 2015 </p>
+									<a href="blog-details.html" class="ellipsis crd-title">In Awe Conference - Smarting the Existing</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Nehru Place</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Thumbnail_Image.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>22 Apr 2015</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Structural Steel Construction Summit</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Ahmedabad</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/wu2.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>31 Mar 2015</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Lecture at Apeejay College Of Architecture</a>
+									<!-- <span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+										<p>School of Architecture, Apeejay Institute of Technology, Noida</p>
+										</span> -->
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/12.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>21 Mar 2015</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Acreconf 2015 (Part 2)</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/1.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>21 Mar 2015</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Acreconf 2015 (Part 1)</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/4.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>21 Mar 2015</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Acreconf 2015 (Part 3)</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/1wu2.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>17 Mar 2015</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Urban Rail Based Transit Systems</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Thumbnail.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>21 Jan 2015</p>
+									<a href="blog-details.html" class="ellipsis crd-title">9th Annual Conference on Airport Development</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/2Thumbnail.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>16 Jan 2015  </p>
+									<a href="blog-details.html" class="ellipsis crd-title">Lecture at University School of Architecture and Planning (USAP)</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Kashmere Gate, New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/DSC_0094.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>19 Dec 2014</p>
+									<a href="blog-details.html" class="ellipsis crd-title">The Economic Times Acetech - Global Green Summit 2014</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/1DSC_7388.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>15 Dec 2014</p>
+									<a href="blog-details.html" class="ellipsis crd-title">3rd Annual Design Mission India, 2014</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/1DSC_1339.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>28 Nov 2014</p>
+									<a href="blog-details.html" class="ellipsis crd-title">2nd Conference On Green Buildings, CII</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Jaipur</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/1IBCfotothumb.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>12 Oct 2014</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Seminar on High Rise Development, IBC</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Raipur</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/foaiddddd2.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>27 Sep 2014</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Festival of Architecture &amp; Design'14</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Mumbai</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/IMG_9865_thumb.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>8 Sep 2014</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Lecture at Apeejay School of Planning &amp; Architecture</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Greater Noida</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/IMG_1001_thumb.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>6 Sep 2014</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Lecture at Indian Institute of Technology</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/ZINC_GSS_thumb.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>10 July 2014</p>
+									<a href="blog-details.html" class="ellipsis crd-title">International Galvanizing Conference</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/1DSC_0094.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>28 Dec 2014</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Green Growth: Renewable Energy Opportunities in Haryana</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Gurgaon, Haryana</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/MP_summit.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>26 Apr 2014</p>
+									<a href="blog-details.html" class="ellipsis crd-title">MP Real Estate Summit</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Indore</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Airport_expansion_summit.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>25 Apr 2014</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Constructing the modern airports in India.</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Shardha_University.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>25 Mar 2014</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Lecture on the topic of Developing Experience</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Sharda University, Mathura</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/pune_hayat.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>6-8 Feb 2014</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Conference on Artists in Concrete Awards, Asia Fest 2013-2014</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Hayatt Regency Pune</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/smart_cities.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>18 Dec 2013</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Conference on Smart and Sustainable Cities</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Hotel Radisson, Noida</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Urjavaran_Lucknow.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>23 Nov 2013</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Urjavaran-Lucknow</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Lucknow</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Urjavaran.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>26 Oct 2013</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Urjavaran-jaipur</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Jaipur</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/green_growth.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>27 Sep 2013</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Conference on Green Growth- The only way forward
+									</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Hotel Westin, Gurgaon</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/DSC_0156.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>12 July 2013</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Conference on Green Appartments,Building Modern Eco-Homes</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/brisca.JPG" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>2 July 2013</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Conference on Inter-modality in Urban transport.
+									</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>The Lalit, Mumbai</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/Intelligent-Buildings.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>26-27 June 2013</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Designing: Intelligent Buildings</a>
+									<!-- <span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+										<p>Lucknow</p>
+										</span> -->
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/fghgh.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>21 June 2013</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Green Turf Conference</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/world_environment_day.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>5 June 2013</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Conference on the Sustainability in mega projects</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>JB Auditorium, Ahemdabad</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/DSC_7336.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>5 June 2013</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Prof. Charanjit Shah at Gicea Talk in Ahmedabad</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>Ahmedabad, Gujarat</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/acreconf-conference.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>8 &amp; 9 Feb 2013</p>
+									<a href="blog-details.html" class="ellipsis crd-title">Acreconf Conference</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>India Habitat Centre</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="creative-cards">
+								<div class="card-img">
+									<a href="#">
+									<img src="https://creativegroup.co.in/images/talks/thumb/airport_conference.jpg" class="img-fluid">
+									</a>
+								</div>
+								<div class="creative-crd-content">
+									<p>21 jan 2013</p>
+									<a href="blog-details.html" class="ellipsis crd-title">7th Annual Conference on Airport Development in India</a>
+									<span class="flexx-location">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="10" r="3" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+											<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" stroke="#4f8b33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<p>New Delhi</p>
+									</span>
+									<a href="blog-details.html" class="crd-btn">
+										Read more
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+											<path style="fill:none;stroke-width:3;stroke-miterlimit:10" d="m12.25 5 11 11-11 11"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div class="cta-bg">
+			<div class="container">
+				<div class="row row-gap">
+					<div class="col-lg-6">
+						<div class="small-heading text-white">Work With Us</div>
+						<div class="main-heading mb-0 text-white">Begin Your Customer Journey With Us</div>
+						<a href="contact.html" class="primary-btn hero-btn mt-4">
+							Get Started Today! 
+							<svg width="19" height="19" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"/>
+								<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- cta ends -->
+		<footer>
+			<div class="container">
+				<div class="row row-gap">
+					<div class="col-lg-8">
+						<div class="row row-gap">
+							<div class="col-md-4">
+								<div class="footer-title">Services</div>
+								<ul>
+									<li><a href="firm.html">Origin</a></li>
+									<li><a href="philosophy.html">Philosophy</a></li>
+									<li><a href="founder-message.html">Founder Message</a></li>
+									<li><a href="peoples.html">Peoples</a></li>
+									<li><a href="clients.html">Clients</a></li>
+									<li><a href="awards.html">Awards</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<div class="footer-title">Company</div>
+								<ul>
+									<li><a href="media.html">Media</a></li>
+									<li><a href="news.html">News</a></li>
+									<li><a href="publications.html">Publications</a></li>
+									<li><a href="talks.html">Talks</a></li>
+									<li><a href="resources.html">Resources</a></li>
+									<li><a href="newsletters.html">Newsletter</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<div class="footer-title">Journal</div>
+								<ul>
+									<li><a href="single.html">Single Page</a></li>
+									<li><a href="blog-details.html">Blog Details</a></li>
+									<li><a href="career.html">Careers</a></li>
+									<li><a href="contact.html">Contact us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<form class="footer-form">
+							<div class="top-form">
+								<div class="form-title">Sign up to our Newsletter</div>
+								<p class="mb-0">Stay up-to date with the Latest News, Announcements and Articles</p>
+								<input type="email" name="" placeholder="Enter Email Id*" required>
+								<button class="primary-btn" type="submit">Subscribe Now!</button>
+							</div>
+							<div class="social">
+								<ul>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+												<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+												<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+												<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+												<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"/>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer-btm">© 2024 Creative Group. All Rights Reserved.</div>
+		</footer>
+		<div id="btt-btn">
+			<span id="progress-value">
+				<svg width="15" height="15" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.134.366a1.25 1.25 0 0 0-1.768 0l-6 6a1.25 1.25 0 1 0 1.768 1.768L6 4.268V17.25a1.25 1.25 0 1 0 2.5 0V4.268l3.866 3.866a1.25 1.25 0 0 0 1.768-1.768z" fill="#fff"></path>
+				</svg>
+			</span>
+		</div>
+		<!-- js attached -->
+		<script defer src="assets/js/jquery.js"></script>
+		<script defer src="assets/js/slick.js"></script>
+		<script defer src="assets/js/main.js"></script>
+	</body>
+</html>

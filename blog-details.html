@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Blogs Details</title>
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-regular.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-100.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-500.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-600.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-700.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-800.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<style>
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 100;
+			src: url('assets/fonts/montserrat-v26-latin-100.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 500;
+			src: url('assets/fonts/montserrat-v26-latin-500.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 600;
+			src: url('assets/fonts/montserrat-v26-latin-600.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 700;
+			src: url('assets/fonts/montserrat-v26-latin-700.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 800;
+			src: url('assets/fonts/montserrat-v26-latin-800.woff2') format('woff2');
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="scrollto">
+					<div class="logo">
+						<a href="index.html">
+						<img src="assets/img/site-logo.svg" class="img-fluid">
+						</a>
+					</div>
+					<div class="header-btn">
+						<a href="contact.html" class="primary-btn">Consult Online Now</a>
+					</div>
+					<div class="menu">
+						<div class="closebtn" onclick="toggleNav()">
+							<svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 384 512" fill="#fff">
+								<path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3l105.4 105.3c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256z"></path>
+							</svg>
+						</div>
+						<nav>
+							<ul>
+								<li class="dropdown">
+									<a href="firm.html">Firm</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="firm.html">Origin</a></li>
+										<li><a href="philosophy.html">Philosphy</a></li>
+										<li><a href="founder-message.html">Founder's Message</a></li>
+										<li><a href="services.html">Services</a></li>
+										<li><a href="peoples.html">People</a></li>
+										<li><a href="clients.html">Clients</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="project.html">Projects</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="airport.html">Airport</a></li>
+									</ul>
+								</li>
+								<li><a href="awards.html">Awards</a></li>
+								<li class="dropdown">
+									<a href="media.html">Media</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="news.html">News</a></li>
+										<li><a href="publications.html">Publications</a></li>
+										<li><a href="talks.html">Talks</a></li>
+										<li><a href="resources.html">Resources</a></li>
+										<li><a href="newsletters.html">Newsletters</a></li>
+									</ul>
+								</li>
+								<li><a href="career.html">Career</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="blog.html">Blog</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="openbtn" onclick="toggleNav()">
+						<svg width="30" height="30" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+							<path d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32m64 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32m384 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32"></path>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header ends -->
+		<div class="hero-inner">
+			<div class="inner-block-img">
+				<img src="assets/img/buidcons.png" class="img-fluid">
+			</div>
+		</div>
+		<!-- hero ends -->
+		<main>
+			<section class="mt-0">
+				<div class="container">
+					<div class="row row-gap align-items-center">
+						<div class="col-lg-5">
+							<div class="inner-page-block">
+								<p class="flexx-breadcrumbs">
+									<span><a href="#">Home</a></span>
+									<span>/</span>
+									<span><a href="#">Blog Details</a></span>
+								</p>
+								<div class="block-title">Blog</div>
+							</div>
+						</div>
+						<!-- <div class="col-lg-7">
+							<div class="ps-2">
+								<div class="main-heading">Blogs Details</div>
+								<p class="mb-0">We actively contribute to society through various initiatives, supporting community development, sustainability efforts, and enhancing overall well-being for those around us.</p>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</section>
+			<!-- ends -->
+			<section class="blog-details mt-5">
+				<div class="container">
+					<div class="single-pg">
+						<h1 class="mb-0">The way forward beyond Net ZERO: By Prof. Charanjit Singh Shah</h1>
+						<div class="flexx-single-pg-detl">
+							<span>
+								<svg width="20" height="20" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"><path d="M29.977 29.889h132.021v131.89H29.977zm64.089 34.092h36.211M94.066 96.06h36.211m-36.71 31.936h36.211" style="fill:none;stroke:#4f8b33;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:57.5;paint-order:stroke markers fill"></path></svg>
+								India Today
+							</span>
+							<span>
+								<svg fill="#4f8b33" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z"></path></svg>
+								10-Nov-2019 
+							</span>
+							<a href="#">
+							<span>
+								<svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 6.5V6H2v.5zm4 0V6H6v.5zm0 4H6v.5h.5zm7-7h.5v-.207l-.146-.147zm-3-3 .354-.354L10.707 0H10.5zM2.5 7h1V6h-1zm.5 4V8.5H2V11zm0-2.5v-2H2v2zm.5-.5h-1v1h1zm.5-.5a.5.5 0 0 1-.5.5v1A1.5 1.5 0 0 0 5 7.5zM3.5 7a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 3.5 6zM6 6.5v4h1v-4zm.5 4.5h1v-1h-1zM9 9.5v-2H8v2zM7.5 6h-1v1h1zM9 7.5A1.5 1.5 0 0 0 7.5 6v1a.5.5 0 0 1 .5.5zM7.5 11A1.5 1.5 0 0 0 9 9.5H8a.5.5 0 0 1-.5.5zM10 6v5h1V6zm.5 1H13V6h-2.5zm0 2H12V8h-1.5zM2 5V1.5H1V5zm11-1.5V5h1V3.5zM2.5 1h8V0h-8zm7.646-.146 3 3 .708-.708-3-3zM2 1.5a.5.5 0 0 1 .5-.5V0A1.5 1.5 0 0 0 1 1.5zM1 12v1.5h1V12zm1.5 3h10v-1h-10zM14 13.5V12h-1v1.5zM12.5 15a1.5 1.5 0 0 0 1.5-1.5h-1a.5.5 0 0 1-.5.5zM1 13.5A1.5 1.5 0 0 0 2.5 15v-1a.5.5 0 0 1-.5-.5z" fill="#4f8b33"></path></svg>
+								PDF :449KB
+							</span>
+							</a>
+							<a href="#">
+							<span>
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0" fill="#4f8b33"></path><path d="M21.894 11.553C19.736 7.236 15.904 5 12 5s-7.736 2.236-9.894 6.553a1 1 0 0 0 0 .894C4.264 16.764 8.096 19 12 19s7.736-2.236 9.894-6.553a1 1 0 0 0 0-.894M12 17c-2.969 0-6.002-1.62-7.87-5C5.998 8.62 9.03 7 12 7s6.002 1.62 7.87 5c-1.868 3.38-4.901 5-7.87 5" fill="#4f8b33"></path></svg>
+								View Page
+							</span>
+							</a>
+						</div>
+					</div>
+					<p>Sustainability as such has no bench marks. The more you respect mother earth and create designs that are organic in built form and knit with nature, the environment becomes more lively and human. The building should not be a constituent of brick and concrete alone but should progressively grow and blossom like a flower and become an eternal part of landscape and its natural surrounding. It needs to be treated like a living organism and should breathe & be inter woven with the environment. </p>
+					<img src="https://creativegroup.co.in/images/news/big/8.jpg" class="img-fluid mb-3">
+					<p>My past 40 years of experience and passion for sustainable green architecture has progressed my thoughts. I feel like a proud father of every building which we have designed, like a father feels honored and proud when his son is settled with recognized profession of merit. Every building is a design challenge. Passive strategies towards respecting the site topography, orientation, wind directions and selection of appropriate materials and technology lead to sustainability. Maximizing daylight and minimizing heat gain in hot-dry and composite climate is one of the major concerns of planning. Conservation of water and energy by use of natural process of recycling, reuse and making the built environment off the grid is what perhaps is Net Zero. We need to look beyond net Zero. The rural & urban overlap demands for food and vegetation growth within the built environment. </p>
+					<p>For a sustainable campus Integrated livable environment has been planned by our team where human habitat and agriculture for self-sufficiency co-exist. New technological advancements have been amalgamated to achieve a sustainable campus wherein human habitat and self-reliant eco-system of Flora & Fauna co-exist. This makes the IIT-Jodhpur campus a vision beyond net zero or net-positive. My professional journey of more than four decades from practice to teaching and authoring of books has provided me with insight into the minds of the young budding Architects as well as the professional community at large. This has given me an opportunity to comprehend the historical knowhow of our organic cities with the new innovative ideas of today. Our recently completed mega infrastructure global winning design for the Chennai Airport, has created a local jewel that could gain global recognition for its commitment to sustainability. Design of the terminals is day-lit with a carefully crafted narrow floor plate thus minimising the reliance on artificial light.</p>
+				</div>
+			</section>
+		</main>
+		<div class="cta-bg">
+			<div class="container">
+				<div class="row row-gap">
+					<div class="col-lg-6">
+						<div class="small-heading text-white">Work With Us</div>
+						<div class="main-heading mb-0 text-white">Begin Your Customer Journey With Us</div>
+						<a href="contact.html" class="primary-btn hero-btn mt-4">
+							Get Started Today! 
+							<svg width="19" height="19" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"/>
+								<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- cta ends -->
+		<footer>
+			<div class="container">
+				<div class="row row-gap">
+					<div class="col-lg-8">
+						<div class="row row-gap">
+							<div class="col-md-4">
+								<div class="footer-title">Services</div>
+								<ul>
+									<li><a href="firm.html">Origin</a></li>
+									<li><a href="philosophy.html">Philosophy</a></li>
+									<li><a href="founder-message.html">Founder Message</a></li>
+									<li><a href="peoples.html">Peoples</a></li>
+									<li><a href="clients.html">Clients</a></li>
+									<li><a href="awards.html">Awards</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<div class="footer-title">Company</div>
+								<ul>
+									<li><a href="media.html">Media</a></li>
+									<li><a href="news.html">News</a></li>
+									<li><a href="publications.html">Publications</a></li>
+									<li><a href="talks.html">Talks</a></li>
+									<li><a href="resources.html">Resources</a></li>
+									<li><a href="newsletters.html">Newsletter</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<div class="footer-title">Journal</div>
+								<ul>
+									<li><a href="single.html">Single Page</a></li>
+									<li><a href="blog-details.html">Blog Details</a></li>
+									<li><a href="career.html">Careers</a></li>
+									<li><a href="contact.html">Contact us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<form class="footer-form">
+							<div class="top-form">
+								<div class="form-title">Sign up to our Newsletter</div>
+								<p class="mb-0">Stay up-to date with the Latest News, Announcements and Articles</p>
+								<input type="email" name="" placeholder="Enter Email Id*" required>
+								<button class="primary-btn" type="submit">Subscribe Now!</button>
+							</div>
+							<div class="social">
+								<ul>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+												<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+												<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+												<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+												<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"/>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer-btm">© 2024 Creative Group. All Rights Reserved.</div>
+		</footer>
+		<div id="btt-btn">
+			<span id="progress-value">
+				<svg width="15" height="15" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.134.366a1.25 1.25 0 0 0-1.768 0l-6 6a1.25 1.25 0 1 0 1.768 1.768L6 4.268V17.25a1.25 1.25 0 1 0 2.5 0V4.268l3.866 3.866a1.25 1.25 0 0 0 1.768-1.768z" fill="#fff"></path>
+				</svg>
+			</span>
+		</div>
+		<!-- js attached -->
+		<script defer src="assets/js/jquery.js"></script>
+		<script defer src="assets/js/slick.js"></script>
+		<script defer src="assets/js/main.js"></script>
+	</body>
+</html>

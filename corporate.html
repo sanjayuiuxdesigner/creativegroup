@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Corporates</title>
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-regular.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-100.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-500.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-600.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-700.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-800.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<style>
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 100;
+			src: url('assets/fonts/montserrat-v26-latin-100.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 500;
+			src: url('assets/fonts/montserrat-v26-latin-500.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 600;
+			src: url('assets/fonts/montserrat-v26-latin-600.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 700;
+			src: url('assets/fonts/montserrat-v26-latin-700.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 800;
+			src: url('assets/fonts/montserrat-v26-latin-800.woff2') format('woff2');
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="scrollto">
+					<div class="logo">
+						<a href="index.html">
+						<img src="assets/img/site-logo.svg" class="img-fluid">
+						</a>
+					</div>
+					<div class="header-btn">
+						<a href="contact.html" class="primary-btn">Consult Online Now</a>
+					</div>
+					<div class="menu">
+						<div class="closebtn" onclick="toggleNav()">
+							<svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 384 512" fill="#fff">
+								<path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3l105.4 105.3c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256z"></path>
+							</svg>
+						</div>
+						<nav>
+							<ul>
+								<li class="dropdown">
+									<a href="firm.html">Firm</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="firm.html">Origin</a></li>
+										<li><a href="philosophy.html">Philosphy</a></li>
+										<li><a href="founder-message.html">Founder's Message</a></li>
+										<li><a href="services.html">Services</a></li>
+										<li><a href="peoples.html">People</a></li>
+										<li><a href="clients.html">Clients</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="project.html">Projects</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="airport.html">Airport</a></li>
+									</ul>
+								</li>
+								<li><a href="awards.html">Awards</a></li>
+								<li class="dropdown">
+									<a href="media.html">Media</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="news.html">News</a></li>
+										<li><a href="publications.html">Publications</a></li>
+										<li><a href="talks.html">Talks</a></li>
+										<li><a href="resources.html">Resources</a></li>
+										<li><a href="newsletters.html">Newsletters</a></li>
+									</ul>
+								</li>
+								<li><a href="career.html">Career</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="blog.html">Blog</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="openbtn" onclick="toggleNav()">
+						<svg width="30" height="30" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+							<path d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32m64 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32m384 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32"></path>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header ends -->
+		<div class="hero-inner">
+			<div class="inner-block-img">
+				<img src="assets/img/gopinath.png" class="img-fluid">
+			</div>
+		</div>
+		<!-- hero ends -->
+		<main>
+			<section class="mt-0">
+				<div class="container">
+					<div class="row row-gap align-items-center">
+						<div class="col-lg-5">
+							<div class="inner-page-block">
+								<p class="flexx-breadcrumbs">
+									<span><a href="#">Home</a></span>
+									<span>/</span>
+									<span><a href="#">Corporates</a></span>
+								</p>
+								<div class="block-title">Creative Group architects in Delhi design GRIHA and LEED-certified green buildings across major Indian cities.</div>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="ps-2">
+								<div class="main-heading">Offices, Corporate, Interior Sector Architect's</div>
+								<p class="mb-0">Creative Group architects in Delhi, have designed GRIHA and LEED Compliant Green buildings in the form of Commercial Complexes, Corporate Office Buildings, Office Interior Designs in Delhi, as well as Tier II cities like Raipur, Kochi, Gurgaon, Coimbatore and Jodhpur.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div class="cta-bg">
+			<div class="container">
+				<div class="row row-gap">
+					<div class="col-lg-6">
+						<div class="small-heading text-white">Work With Us</div>
+						<div class="main-heading mb-0 text-white">Begin Your Customer Journey With Us</div>
+						<a href="contact.html" class="primary-btn hero-btn mt-4">
+							Get Started Today! 
+							<svg width="19" height="19" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"/>
+								<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- cta ends -->
+		<footer>
+			<div class="container">
+				<div class="row row-gap">
+					<div class="col-lg-8">
+						<div class="row row-gap">
+							<div class="col-md-4">
+								<div class="footer-title">Services</div>
+								<ul>
+									<li><a href="firm.html">Origin</a></li>
+									<li><a href="philosophy.html">Philosophy</a></li>
+									<li><a href="founder-message.html">Founder Message</a></li>
+									<li><a href="peoples.html">Peoples</a></li>
+									<li><a href="clients.html">Clients</a></li>
+									<li><a href="awards.html">Awards</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<div class="footer-title">Company</div>
+								<ul>
+									<li><a href="media.html">Media</a></li>
+									<li><a href="news.html">News</a></li>
+									<li><a href="publications.html">Publications</a></li>
+									<li><a href="talks.html">Talks</a></li>
+									<li><a href="resources.html">Resources</a></li>
+									<li><a href="newsletters.html">Newsletter</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<div class="footer-title">Journal</div>
+								<ul>
+									<li><a href="single.html">Single Page</a></li>
+									<li><a href="blog-details.html">Blog Details</a></li>
+									<li><a href="career.html">Careers</a></li>
+									<li><a href="contact.html">Contact us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<form class="footer-form">
+							<div class="top-form">
+								<div class="form-title">Sign up to our Newsletter</div>
+								<p class="mb-0">Stay up-to date with the Latest News, Announcements and Articles</p>
+								<input type="email" name="" placeholder="Enter Email Id*" required>
+								<button class="primary-btn" type="submit">Subscribe Now!</button>
+							</div>
+							<div class="social">
+								<ul>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+												<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+												<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+												<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+												<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"/>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer-btm">© 2024 Creative Group. All Rights Reserved.</div>
+		</footer>
+		<div id="btt-btn">
+			<span id="progress-value">
+				<svg width="15" height="15" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.134.366a1.25 1.25 0 0 0-1.768 0l-6 6a1.25 1.25 0 1 0 1.768 1.768L6 4.268V17.25a1.25 1.25 0 1 0 2.5 0V4.268l3.866 3.866a1.25 1.25 0 0 0 1.768-1.768z" fill="#fff"></path>
+				</svg>
+			</span>
+		</div>
+		<!-- js attached -->
+		<script defer src="assets/js/jquery.js"></script>
+		<script defer src="assets/js/slick.js"></script>
+		<script defer src="assets/js/main.js"></script>
+	</body>
+</html>

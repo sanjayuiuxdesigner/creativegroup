@@ -1,0 +1,3154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>People</title>
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-regular.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-100.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-500.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-600.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-700.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-800.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<style>
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 100;
+			src: url('assets/fonts/montserrat-v26-latin-100.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 500;
+			src: url('assets/fonts/montserrat-v26-latin-500.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 600;
+			src: url('assets/fonts/montserrat-v26-latin-600.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 700;
+			src: url('assets/fonts/montserrat-v26-latin-700.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 800;
+			src: url('assets/fonts/montserrat-v26-latin-800.woff2') format('woff2');
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="scrollto">
+					<div class="logo">
+						<a href="index.html">
+						<img src="assets/img/site-logo.svg" class="img-fluid">
+						</a>
+					</div>
+					<div class="header-btn">
+						<a href="contact.html" class="primary-btn">Consult Online Now</a>
+					</div>
+					<div class="menu">
+						<div class="closebtn" onclick="toggleNav()">
+							<svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 384 512" fill="#fff">
+								<path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3l105.4 105.3c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256z"></path>
+							</svg>
+						</div>
+						<nav>
+							<ul>
+								<li class="dropdown">
+									<a href="firm.html">Firm</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="firm.html">Origin</a></li>
+										<li><a href="philosophy.html">Philosphy</a></li>
+										<li><a href="founder-message.html">Founder's Message</a></li>
+										<li><a href="services.html">Services</a></li>
+										<li><a href="peoples.html">People</a></li>
+										<li><a href="clients.html">Clients</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="project.html">Projects</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="airport.html">Airport</a></li>
+									</ul>
+								</li>
+								<li><a href="awards.html">Awards</a></li>
+								<li class="dropdown">
+									<a href="media.html">Media</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="news.html">News</a></li>
+										<li><a href="publications.html">Publications</a></li>
+										<li><a href="talks.html">Talks</a></li>
+										<li><a href="resources.html">Resources</a></li>
+										<li><a href="newsletters.html">Newsletters</a></li>
+									</ul>
+								</li>
+								<li><a href="career.html">Career</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="blog.html">Blog</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="openbtn" onclick="toggleNav()">
+						<svg width="30" height="30" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+							<path d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32m64 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32m384 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32"></path>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header ends -->
+		<div class="hero-inner">
+			<div class="inner-block-img">
+				<img src="assets/img/cruise.png" class="img-fluid">
+			</div>
+		</div>
+		<!-- hero ends -->
+		<main>
+			<section class="mt-0">
+				<div class="container">
+					<div class="row row-gap align-items-center">
+						<div class="col-lg-5">
+							<div class="inner-page-block">
+								<p class="flexx-breadcrumbs">
+									<span><a href="#">Home</a></span>
+									<span>/</span>
+									<span><a href="#">People</a></span>
+								</p>
+								<div class="block-title">It is Only the People Who Can Be The Architects of a Great Architecture Organization.</div>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="ps-2">
+								<div class="main-heading">Our People</div>
+								<p class="mb-0">It is Only the People Who Can Be The Architects of a Great Architecture Organization.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- people ends -->
+			<section>
+				<div class="container">
+					<div class="row row-gap-3">
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/1charanjit.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal1" class="open-modal">Prof. Charanjit Singh Shah</a>
+											<span class="head-sep"></span>
+											<p>Founding Principal</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal1" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal1" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/1charanjit.jpg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Prof. Charanjit Singh Shah
+												</a>
+												<p>Founding Principal</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													Bachelor of Architecture, School of Architecture Planning, New Delhi (1970) Registered Architect CA/75/24; (CoA) Fellowship with Indian Institute of Architects Mumbai (1980); Fellowship with Institution of Valuers (1987)
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												Prof. Charanjit Singh Shah is an architect, planner infrastructure expert with five decades of practice. He is an author, scholar, educationist, teacher, art architecture critic practicing sustainable green architecture.
+											</p>
+											<p class="mb-3">
+												His works speak of his contribution looking beyond architecture development of large infrastructure projects like Airports, Metro, Railway station, Transit Orient Development, Inter Modal hub creating Sustainable, Walk-able, Cyclable neighborhood creating Indian sustainable Smart Cities of tomorrow. He is being adorably called as <strong>'AIRPORT KING.</strong>'
+											</p>
+											<p class="mb-3">
+												Few of his milestone projects include Chennai Airport, Amudham Dairy Complex, NCUI Institutional Complex,  Raipur Airport, Goa Airport, Vadodara Airport, Agartala Airport, Bhubaneshwar Airport, Charbagh Railway Station, Kota Railway Station, Times Square Mall in Naya Raipur, GEMS School Kochi, IIM Ranchi, IIT Jodhpur, and Kongu Convention Center, Tamil Nadu and the recently executed <strong>Kartarpur Landport Terminal at Dera Baba Nanak inaugurated by Shri Narendra Modi in November 2019.</strong>
+											</p>
+											<p class="mb-3">
+												Dr. S.S. Bhatti has been tempted to call Prof. Shah the 'Patrick Geddes of India' in creating Sustainable Architecture.
+											</p>
+											<p class="mb-3">
+												Recently, his works and legacy of the past 50 years have been published in the national monthly <strong>Architecture + Design December Issue 2019.</strong>
+											</p>
+											<p class="mb-3">
+												Prof. Shah has also successfully initiated <strong>Smart Habitat Foundation </strong>– a center of excellence in pursuit of art and architecture, urban planning, transport, and infrastructure – a platform where academicians and practitioners come together to interact in form of a serious dialogue bridging the gap between academics and practical application.
+											</p>
+											<div class="h5">Certifications</div>
+											<ul class="project-list">
+												<li>Bachelor of Architecture (1970), School of Planning and Architecture, New Delhi, India</li>
+												<li>Fellowship with Indian Institute of Architects, Mumbai (1980)</li>
+												<li>Fellowship with Institution of Valuers (1987)</li>
+											</ul>
+											<div class="h5">Academic  Positions Held</div>
+											<ul class="project-list">
+												<li>Professor, Director Academics Head, Jamia Mila Islamia, Faculty of Architecture, New Delhi (20022007)</li>
+												<li>Visiting Professor at School of Planning and Architecture, New Delhi (1996-2005)</li>
+												<li>Professor, Vastu Kala Academy of Architecture, New Delhi (19992001)</li>
+												<li>Professor, Apeejay School of Architecture and Planning, Greater Noida</li>
+											</ul>
+											<div class="h5">Professional Advisor</div>
+											<ul class="project-list">
+												<li>AYA Awards Secretariat (1997-99)</li>
+												<li>ArchiDesign Perspective</li>
+												<li>Usha Shri Ram Furniture Industries Pvt. Ltd.</li>
+												<li>Consulting Editor, American Biographic Institute</li>
+											</ul>
+											<div class="h5">Publications</div>
+											<ul class="project-list">
+												<li>Redefining Indian Smart Sustainable cities</li>
+												<li>Evolution and Usage of Steel</li>
+												<li>Architect's Handbook - Ready Reckoner</li>
+												<li>Architectural Handbook Series - Water Supply and Sanitation</li>
+												<li>Architectural Handbook Series - Kitchens</li>
+												<li>The Romance of Construction</li>
+												<li>Professional Practice Project Management towards Sustainable Development</li>
+												<li>Various prominent publications in print and digital media like A+D, Glitz, Ace Update, NBMCW, IFJ, Interior Exterior, etc.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/1gurpreet.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal2" class="open-modal">Ar. Gurpreet S Shah</a>
+											<span class="head-sep"></span>
+											<p>Principal Architect & Urban Designer</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal2" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal2" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/1gurpreet.jpg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Ar. Gurpreet S Shah
+												</a>
+												<p>Principal Architect & Urban Designer</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													M.S. in Architecture & Urban Design, Columbia University,USA (2004) Bachelor of Architecture, Sushant School of Architecture, Gurgaon, Haryana (2001) Registered Member of Council of Architecture, New Delhi (2002); Registration No.: CA/2002/30368
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												Ar. Gurpreet Shah has more than a decade of local and international architecture and urban design experience. With his vision to deliver a new generation of Airports and Mass transit facilities that are sustainable and also give a world class travel experience, Mr. Shah has pioneered sustainable infrastructure designs in India.
+											</p>
+											<p class="mb-3">
+												Prior to joining Creative Group Mr. Shah has worked with Beyer Blinder Belle Architects, New York, USA. Here he led the development of future campus planning frameworks for Indiana University, Bloomington and Princeton University, New Jersey. The work includes an analysis of the infrastructure, land utilization and the open space to develop a framework plan for future development.
+											</p>
+											<p class="mb-3">
+												He won the Indian Institute of Architects’ (NC) Design Award in 1999 and the William Kinne Fellows Award – A Travel prize awarded by Columbia University to study “Monuments and Contested Public Space” in Greece and Istanbul in 2004.
+											</p>
+											<p class="mb-3">
+												In Q1 of 2012 his team successfully completed the much coveted Mega Design project for Modernization of Chennai Airport. Under his leadership the firm has won the design competitions for Airport Terminals at Vadodara, Raipur and Goa, their city-side development, the Metro Station at Chennai Airport, Sustainable housing for TERI, LIC housing (Jaipur), Corporate Offices for OIL India Ltd. and Haryana Power Generation Corporation etc. With the sustainable Ananda housing project, Ar. Gurpreet Shah has pioneered the highly functional yet efficient designs for low cost housing. With a consistent record of delivering designs close to original intent and within the stipulated time and budget, his projects have won many accolades and received much acclaim from the press, profession and general public alike. Some of which include Best Infrastructure Project of the Year Tamil Nadu by UltraTech 2012 for Chennai Airport, Best Infrastructure Project of the Year by AICA (2013-14) for Chennai Airport, Best Airport(Rest of India), National Tourism Award by Ministry of Tourism for Raipur Airport, Outstanding Concrete Structure, ICI by Ultratech 2014 for Goa Airport.
+											</p>
+											<p class="mb-3">
+												His designs have been recently selected for four new railway stations in Naya Raipur through a global design competition. He is also entrusted for designing Gems School, the first school in the smart city of Kochi. By virtue of his diverse experience and unique design ideology, the firm has been selected by various cooperates to design their office complex all over India.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/1Prabhpreet.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal3" class="open-modal">Prabhpreet S Shah</a>
+											<span class="head-sep"></span>
+											<p>Executive Director</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal3" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal3" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/1Prabhpreet.jpg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Prabhpreet S Shah
+												</a>
+												<p>Executive Director</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													MBA � Indian School of Business, Hyderabad, Andhra Pradesh, India
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												Mr. Prabhpreet Shah is spearheading the strategy, feasibility analysis and commercial development analysis for project initiatives at Creative Group. He brings with him nine years of rich international strategic management, techno- commercial feasibility analysis, business development and consulting experience across the real estate, architecture, infrastructure, energy, pharmaceuticals and IT sectors. Mr. Shah is an engineer and an MBA specializing in Marketing and Finance. He graduated as one of the top students from the Indian School of Business (ISB), Hyderabad, being the Dean’s list and Merit list awardees at the school. He has worked with and consulted several leading multinational firms and on mergers & acquisitions, new market entry, operations optimization and business process enhancement etc. Mr. Shah has widely travelled across the globe.
+											</p>
+											<p class="mb-3">
+												Under his leadership the firm has established several local and international alliances thus bringing innovative techniques and design practices to the firm that are global in nature yet customized to the local needs. Mr. Shah has led the firm’s foray into real estate development through URC Creative Developers (P) Ltd – a venture for contemporary real estate development for the economically and culturally diverse Indian Diasporas.
+											</p>
+											<p class="mb-3">
+												Mr. Shah is leading various aspects including project identification, land acquisition, project feasibility/financial analysis, land valuation, project cost estimation and pricing, project financing and sales & marketing activities.
+											</p>
+											<div class="h5">Projects Undertaken:</div>
+											<ul class="project-list">
+												<li>Ananda Housing,Tirpur</li>
+												<li>Chennai Airport,Chennai,India</li>
+												<li>Raipur International Airport,Raipur,India</li>
+												<li>Kongu Convention Centre,Erode,Tamil Nadu</li>
+												<li>IIT Jodhpur, Net Zero Concept</li>
+												<li>Intermodal Station Pre-feasibility Project,MEGA,Gujarat</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/Mr._Sourabh_Goswami.jpeg" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal4" class="open-modal">Mr. Sourabh Goswami</a>
+											<span class="head-sep"></span>
+											<p>Managing Director</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal4" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal4" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/Mr._Sourabh_Goswami.jpeg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Mr. Sourabh Goswami
+												</a>
+												<p>Managing Director</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													Educational Background: MBA graduate, specializing in Business Management Administration. Master's in Business Management from Nirma University, Class of 2002. Professional Development: Completed Corporate Program in International Business from IIM In
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												Mr. Sourabh Goshami, an MBA graduate, masters in business management administration from Nirma 2002 and corpotate program on International Business Course from IIM Indore
+											</p>
+											<p class="mb-3">
+												Now, Executive Director at Creative Group LLP and Vice-Chairman at CG Smart Habitat Foundation.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/Untitled_presentation_(17).jpg" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal5" class="open-modal">Ar. Minal Patel</a>
+											<span class="head-sep"></span>
+											<p>Principal Architect,  Western Division</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal5" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal5" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/Untitled_presentation_(17).jpg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Ar. Minal Patel
+												</a>
+												<p>Principal Architect, Western Division</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													M Arch, Urban Design - CEPT, 1997 B. Arch - Institute of Environmental Design IIA Bombay Fellowship 1994
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												She has dealt with a number of large housing schemes, commercial, institutional buildings, individual bungalows, large to small interiors both offices, residential, preparing town planning scheme and preparing road designs for Government. She has been actively involved with institutions like GICEA, IIA, etc in her various capacities. She is actively involved in the field of Urban Planning and Architecture education as a visiting faculty to C.E.P.T. (Ahmedabad), IED (V.V. Nagar), S.V.I.T.(Vasad), Involved with prime educational institute United institute of Design, Gandhinagar as PG head and Director at L.J. School of Architecture.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/2Ar-Frederick-Schwartz-Small.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal6" class="open-modal">Late Ar. Frederick Schwartz</a>
+											<span class="head-sep"></span>
+											<p>Principal Architect</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal6" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal6" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/2Ar-Frederick-Schwartz-Small.jpg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Late Ar. Frederick Schwartz
+												</a>
+												<p>Principal Architect</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													Bachelor of Architecture, School of Architecture Planning, New Delhi (1970) Registered Architect CA/75/24; (CoA) Fellowship with Indian Institute of Architects Mumbai (1980); Fellowship with Institution of Valuers (1987)
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												Prof. Charanjit Singh Shah is an architect, planner infrastructure expert with five decades of practice. He is an author, scholar, educationist, teacher, art architecture critic practicing sustainable green architecture.
+											</p>
+											<p class="mb-3">
+												His works speak of his contribution looking beyond architecture development of large infrastructure projects like Airports, Metro, Railway station, Transit Orient Development, Inter Modal hub creating Sustainable, Walk-able, Cyclable neighborhood creating Indian sustainable Smart Cities of tomorrow. He is being adorably called as <strong>'AIRPORT KING.</strong>'
+											</p>
+											<p class="mb-3">
+												Few of his milestone projects include Chennai Airport, Amudham Dairy Complex, NCUI Institutional Complex,  Raipur Airport, Goa Airport, Vadodara Airport, Agartala Airport, Bhubaneshwar Airport, Charbagh Railway Station, Kota Railway Station, Times Square Mall in Naya Raipur, GEMS School Kochi, IIM Ranchi, IIT Jodhpur, and Kongu Convention Center, Tamil Nadu and the recently executed <strong>Kartarpur Landport Terminal at Dera Baba Nanak inaugurated by Shri Narendra Modi in November 2019.</strong>
+											</p>
+											<p class="mb-3">
+												Dr. S.S. Bhatti has been tempted to call Prof. Shah the 'Patrick Geddes of India' in creating Sustainable Architecture.
+											</p>
+											<p class="mb-3">
+												Recently, his works and legacy of the past 50 years have been published in the national monthly <strong>Architecture + Design December Issue 2019.</strong>
+											</p>
+											<p class="mb-3">
+												Prof. Shah has also successfully initiated <strong>Smart Habitat Foundation </strong>– a center of excellence in pursuit of art and architecture, urban planning, transport, and infrastructure – a platform where academicians and practitioners come together to interact in form of a serious dialogue bridging the gap between academics and practical application.
+											</p>
+											<div class="h5">Certifications</div>
+											<ul class="project-list">
+												<li>Bachelor of Architecture (1970), School of Planning and Architecture, New Delhi, India</li>
+												<li>Fellowship with Indian Institute of Architects, Mumbai (1980)</li>
+												<li>Fellowship with Institution of Valuers (1987)</li>
+											</ul>
+											<div class="h5">Academic  Positions Held</div>
+											<ul class="project-list">
+												<li>Professor, Director Academics Head, Jamia Mila Islamia, Faculty of Architecture, New Delhi (20022007)</li>
+												<li>Visiting Professor at School of Planning and Architecture, New Delhi (1996-2005)</li>
+												<li>Professor, Vastu Kala Academy of Architecture, New Delhi (19992001)</li>
+												<li>Professor, Apeejay School of Architecture and Planning, Greater Noida</li>
+											</ul>
+											<div class="h5">Professional Advisor</div>
+											<ul class="project-list">
+												<li>AYA Awards Secretariat (1997-99)</li>
+												<li>ArchiDesign Perspective</li>
+												<li>Usha Shri Ram Furniture Industries Pvt. Ltd.</li>
+												<li>Consulting Editor, American Biographic Institute</li>
+											</ul>
+											<div class="h5">Publications</div>
+											<ul class="project-list">
+												<li>Redefining Indian Smart Sustainable cities</li>
+												<li>Evolution and Usage of Steel</li>
+												<li>Architect's Handbook - Ready Reckoner</li>
+												<li>Architectural Handbook Series - Water Supply and Sanitation</li>
+												<li>Architectural Handbook Series - Kitchens</li>
+												<li>The Romance of Construction</li>
+												<li>Professional Practice Project Management towards Sustainable Development</li>
+												<li>Various prominent publications in print and digital media like A+D, Glitz, Ace Update, NBMCW, IFJ, Interior Exterior, etc.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/1nisha.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal7" class="open-modal">Ar. Nisha Agnihotri</a>
+											<span class="head-sep"></span>
+											<p>Senior Associate Architect</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal7" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal7" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/1nisha.jpg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Ar. Nisha Agnihotri
+												</a>
+												<p>Senior Associate Architect</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													M.Arch (Construction Management), Yashwantrao Chavan Maharashtra Open University, Nashik (2009); B.Arch (Mahatma Education Society College of Architecture, Mumbai (2006)
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												Nisha has extensive experience in executing projects of all magnitudes and nature. With her strong commitment towards Creative Group, she has overseen the execution and delivery of residential, commercial, industrial, institutional and mass transit projects.
+											</p>
+											<p class="mb-3">
+												Besides dealing with large scale projects ranging from sprawling townships to urban scale master plans, she also provides client interface, meeting management, scheduling and monitoring of projects. Being a dynamic provider of architectural services, she uses a collaborative approach to create and deliver outstanding customer experiences.
+												Over the past few years, Nisha has developed her vision to deliver a new generation of design which is sustainable, global and timeless.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/1Scott.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal8" class="open-modal">Ar. Scott B. Knox</a>
+											<span class="head-sep"></span>
+											<p>Studio Director</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal8" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal8" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/1Scott.jpg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Ar. Scott B. Knox
+												</a>
+												<p>Studio Director</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													Masters of Architecture (1999), Rensselaer Polytechnic Institute, Troy, New York, USA Bachelor�s of Science, Mechanical Engineering and Industrial Design (1988), University of Wisconsin Madison, Madison,Wisconsin, USA
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												Scott B. Knox is a  senior architect and urban designer with widespread experience in housing, transportation, and community design. His design inspiration in the built environment comes from the relationship people have with nature.  The thought process of his work blends architecture, engineering, film, theatre, writing and speaking.
+											</p>
+											<p class="mb-3">
+												Over decades he has designed large scale projects like Logan Airport, Smithsonian  Institute,  Albany Nanotech, Johns Hopkins University, Global Foundries, Toronto International Airport, Tartikov Village, USB Financial and Honeycomb Village. For him, leadership and follow-through go hand-in-hand to lift the inspiration of design into reality. 
+											</p>
+											<p class="mb-3">
+												As the Studio Director of Design at Creative Group, he has been at the forefront of developing landmark sustainable projects in India in aviation including Shirdi Airport, Agartala  Airport, Indigo Hangar Facility, Bhubaneshwar Airport, Varanasi Airport and Pertrapole Landmark, along with various Multimodal hubs and Railway stations.
+											</p>
+											<p class="mb-3">
+												He is also leading the initiative for 'DigiYatra' - Advanced Airport Design systems for smart Airport/ IT and security systems and better architectural design.
+											</p>
+											<div class="h5">PROFESSIONAL POSITIONS HELD</div>
+											<ul class="project-list">
+												<li>Sr. Architect/Urban Designer, Sunlight HV LLP (SLI), India (July 2015- 2018)</li>
+												<li>Sr. Architect/TI Designer, CH2MHill, Malta, NY (2014)</li>
+												<li>US Operations BIM Lead, M+W Zander (M+W), Albany, NY. (2006 – ’08)</li>
+												<li>Project Architect, Collins + Scoville Architects (C+S), PC, Albany, NY. (2004 – ’06)</li>
+												<li>Project Architect, Bonstra Architects (BA), PC - Washington, DC. (1999 – ’02)</li>
+												<li>President, Institute For Monumental Architecture (IMA) a 501c3, Washington, DC. (1999 – ‘04)</li>
+												<li>Architectural Master Planner, Ehrenkrantz, Eckstut, & Kuhn (EEK), N.Y. & D.C. (1998 – ‘99)</li>
+												<li> Job Captain, Skidmore, Owings, Merrill (SOM), New York, NY. (1996 – ’98) </li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/Puneet_Sir-modified.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal10" class="open-modal">Ar. Puneet Bhardwaj</a>
+											<span class="head-sep"></span>
+											<p>Senior Associate Architect</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal10" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal10" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/Puneet_Sir-modified.jpg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Ar. Puneet Bhardwaj
+												</a>
+												<p>Senior Associate Architect</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													PGDCM, NICMAR Pune, Bachelor of Architecture, Vastu Kala Academy, IP University, Delhi
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												With over 16 years of expertise, Ar. Puneet Bharadwaj has worked for a variety of architectural firms. As an Airport Architect at Creative Group LLP, he is responsible for coordinating and scheduling design review sessions as well as consolidating input from stakeholders, including any third-party reviewers. Feedback on the design should be coordinated with the Design Consultant. Stakeholders should be invited to design review sessions. In collaboration with the Design Consultant, monitor and track the development of the sustainability plan as well as the tracking of LEED components. Confirm that any design concerns that have been resolved have been included in the design submittal packages. Coordinate submittal/shop drawing evaluations with HAS project stakeholders, including as subject matter experts, airport operations, and the project team.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/1Surjit.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal11" class="open-modal">Ar. Surjit Singh</a>
+											<span class="head-sep"></span>
+											<p>Senior Associate Architect</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal11" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal11" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/1Surjit.jpg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Ar. Surjit Singh
+												</a>
+												<p>Senior Associate Architect</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													B.Arch, IIA
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												With 19 years of experience in the architectural field, Ar. Surjit S. Bhambra has worked for a number of firms, holding positions ranging from Jr. Architect to Project Architect. For the past 12 years, I've been heading the team as a Terminal Interior Designer and Senior Architect at Creative Group LLP. Ar. Surjit Singh contributed to the development of the airside and city side by offering architecture and engineering services. He leads the design team's efforts to get the project from concept to completion.
+											</p>
+											<div class="h5">Education</div>
+											<ul class="project-list">
+												<li>Diploma in Architecture (Aryabhatt Polytechnic, Delhi 1993</li>
+												<li>B.ARCH (All Indian Institute of Architect, Bombay 1999)</li>
+											</ul>
+											<div class="h5">PROFESSIONAL AFFILIATIONS</div>
+											<ul class="project-list">
+												<li>Member of All Indian Institute of Architect (Reg. Sr. No.12670)</li>
+												<li>Member of Council of Architect (CA/2000/25854</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/2Ds_Bakshi.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal12" class="open-modal">Mr. D. S. Bakshi</a>
+											<span class="head-sep"></span>
+											<p>Senior Vice President Middle East Operations</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal12" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal12" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/2Ds_Bakshi.jpg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Mr. D. S. Bakshi
+												</a>
+												<p>Senior Vice President Middle East Operations</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/1Kanu.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal13" class="open-modal">Mrs. Kanureet Shah</a>
+											<span class="head-sep"></span>
+											<p>Executive Director - Administration and Finance</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal13" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal13" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/1Kanu.jpg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Mrs. Kanureet Shah
+												</a>
+												<p>Executive Director - Administration and Finance</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													BCA Punjab University, MBA Punjab University
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/WhatsApp_Image_2022-05-20_at_4.21.09_PM.jpeg" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal14" class="open-modal">Ar. Daksh Sharma</a>
+											<span class="head-sep"></span>
+											<p>Architect</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal14" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal14" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/WhatsApp_Image_2022-05-20_at_4.21.09_PM.jpeg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Ar. Daksh Sharma
+												</a>
+												<p>Architect</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													M.Arch (Ekistics), Jamia Milia Islamia University, New Delhi (2021) B.Arch, Amity University, Lucknow (2016)
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												With 6 years of Experience at Creative Group LLP, Ar. Daksh Sharma has been responsible for many projects by creating designs, establishing plans, and putting building designs into action. 
+												As the Design Team Leader, he plays a key role in project delivery. Curating feasibility reports, assessing environmental 	effect, developing project proposals, estimating costs, determining timetables, and supervising building processes are some of the responsibilities he has been fulfilling. 
+											</p>
+											<div class="h5">Some of the key projects were-  </div>
+											<ul class="project-list">
+												<li>Rajkot Airport (2021)</li>
+												<li>Bilaspur Township Chhattisgarh (2021)</li>
+												<li>Varanasi Airport (2020)</li>
+												<li>Bhubaneswar Airport (2020)</li>
+												<li>Charbagh Railway Station (2019).</li>
+												<li>Thakurli Railway Station (2019)</li>
+												<li>Nagpur Railway Station (2018) (Competition)</li>
+												<li>Airforce Station, Mihan (2018)</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/1pankaj.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal15" class="open-modal">Ar. Pankaj Sehrawat</a>
+											<span class="head-sep"></span>
+											<p>Architect</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal15" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal15" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/1pankaj.jpg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Ar. Pankaj Sehrawat
+												</a>
+												<p>Architect</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/Amit_Dua_Sir-modified.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal16" class="open-modal">Ar. Amit Dua</a>
+											<span class="head-sep"></span>
+											<p>Senior Associate Architect</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal16" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal16" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/Amit_Dua_Sir-modified.jpg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Ar. Amit Dua
+												</a>
+												<p>Senior Associate Architect</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													Bachelor of Architecture, Ar. Amit Dua, a member of Creative Group LLP, has 16 years of experience in institutional design and planning. In the field of aviation infrastructure development, he leads the team with passion and enthusiasm. He is responsible
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												Ar. Amit Dua, a member of Creative Group LLP, has 16 years of experience in institutional design and planning. In the field of aviation infrastructure development, he leads the team with passion and enthusiasm.
+												He is responsible for designing, project delivery, reviewing reports and environmental effects, and putting building plans into action as the Design Team Leader.
+											</p>
+											<div class="h5">Certifications</div>
+											<p>16 years of experience in Institutional and Aviation infrastructure development.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/1Gaurav_Sir-modified.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal17" class="open-modal">Ar. Gaurav Singh</a>
+											<span class="head-sep"></span>
+											<p>Senior Architect</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal17" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal17" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/1Gaurav_Sir-modified.jpg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Ar. Gaurav Singh
+												</a>
+												<p>Senior Architect</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													Strategic Financial Management Programme for Executives, IIM Indore, 2004.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/Bawa_Sir-modified_(1).jpg" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal18" class="open-modal">Gurmukh Singh Bawa</a>
+											<span class="head-sep"></span>
+											<p>Aviation Expert</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal18" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal18" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/Bawa_Sir-modified_(1).jpg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Gurmukh Singh Bawa
+												</a>
+												<p>Aviation Expert</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													B.A Economics, Delhi University, Delhi (1976) M.A Economics, MMH college, Uttar Pradesh (1978) Diploma Computer Programming and Data Processing, Thiagaraj college of engineering, Tamil Nadu (1986) Diploma - System Analysis and Data Processing, Annamala
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												Mr. Gurmukh S. Bawa, an economist by profession with a postgraduate degree in economics from Meerut University, aided the AAI in reaching new heights by establishing a full-fledged Computer Based Training unit at the National Institute of Aviation Management & Research (NIAMAR), as well as a Course Development Unit, Statistical Unit, and Management Information System Unit in the AAI. He provides nearly 40 years of experience in airport administration, economics, and public relations, among many other aspects.
+											</p>
+											<p class="mb-3">
+												He got the Lifetime Achievement Award for his outstanding contributions to the area of public relations.
+												Mr. Bawa has been sharing his knowledge and experience with Creative Group LLP as an Aviation Consultant for almost 2 years now. Consulting the team for Nepal Airport Project which is one of the biggest infrastructure projects of Nepal.
+											</p>
+											<div class="h5">Membership in Professional Associations and Publications</div>
+											<ul class="project-list">
+												<li>Life Members of Computer Society of India (CSI).</li>
+												<li>Life Member of Indian Society of Training & Development (ISTD).</li>
+												<li>Life Member of Aeronautical Society of India (ASI).</li>
+												<li>Alumni Member of IAMTI, Montreal.  Course Developer, TRAINAIR, ICAO.</li>
+											</ul>
+											<div class="h5">Articles by Gurmukh Singh Bawa</div>
+											<ul class="project-list">
+												<li>Re-Imagine the Aviation in Post-Pandemic Era</li>
+												<li>Aviation Traffic Recovery -  Will it Depend Upon Technology deployment ?</li>
+												<li>Resilience Score Quotient For Airports, CIA World Magazine</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/AK_Mitra-modified.png" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal19" class="open-modal">Ar. Anjan Kumar Mitra</a>
+											<span class="head-sep"></span>
+											<p>Electrical</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal19" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal19" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/AK_Mitra-modified.png" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Ar. Anjan Kumar Mitra
+												</a>
+												<p>Electrical</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													Electrical Engineering from NIT, Rourkela Post graduate diploma in Management
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												Mr. Anjan K. Mitra holds a bachelor's degree in electrical engineering from IIT Rourkela and has worked in India for 42 years. Mr. Mitra worked for the Airport Authority of India for 35 years, fulfilling all of his obligations and responsibilities. Mr. Mitra joined Creative Group LLP as a Senior Engineer-Airport System, where he is in charge of designing lighting systems for architectural projects that use light and working light fitting qualities. determining the extent, nature, and style of lighting that will aesthetically enrich the structure, and researching the impact and effect of the designed lights, as well as the emotional response they elicit For economic and aesthetic reasons, ensuring that over-illumination, glare, and colour confusion are avoided. To merge lighting patterns into the background, use illumination.
+											</p>
+											<p class="mb-3">
+												<strong>Accomplishments</strong>
+												Part of various Airport construction projects  commissioned across the country viz - 
+												Terminal -2 at IGI Airport, New Delhi in 1986 – which was a landmark project at that time.
+												Terminal 2C at Mumbai Airport in 1999 and later expansion of Terminal IA there.
+												Reconstruction of Bhuj Airport at Gujarat in 2004 after it was ravaged in an  earthquake. A very challenging task considering the severe damage all around.
+												Surat Airport in 2006 – a brown field project
+												New Terminal 2 at Kolkata Airport in 2013 – which won numerous awards in India & abroad.
+											</p>
+											<p class="mb-3">
+												A self motivated and organised professional  having first hand experience in engineering services required and practised at Airports, proficient in codes and practices and  skilled in leading a team to accomplish a project from concept to hand over to actual user and thereafter providing all inclusive service for uninterrupted availability of systems.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/Screenshot_2022-04-13_114027-modified.png" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal20" class="open-modal">Mr. Anil Kumar Bansal</a>
+											<span class="head-sep"></span>
+											<p>Director Projects</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal20" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal20" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/Screenshot_2022-04-13_114027-modified.png" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Mr. Anil Kumar Bansal
+												</a>
+												<p>Director Projects</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													Master of Business Administration, IGNOU (1999) Post Graduate Diploma in Marketing Management, IGNOU (1997) Diploma in Management, IGNOU (1996) Civil Engineering, The Institution of Engineers (India) (1984) Diploma in Civil Engineering, Government Pol
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												With over 41 years of technical and professional experience, Mr. Bansal, a Civil Engineering graduate, has worked with a variety of organisations. He worked for the Central Works Department and the Airport Authority of India.
+												Project Management, planning, contract handling, quality control, budgeting, and estimation are just a few of his specialties.
+											</p>
+											<div class="h5">Membership</div>
+											<ul class="project-list">
+												<li>Life Member Institution of Engineers (India)</li>
+												<li>Life Member Indian Building Congress</li>
+												<li>Engineering Council of India</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/Pan_Singh_Sir-modified.png" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal21" class="open-modal">Mr. Pan Singh</a>
+											<span class="head-sep"></span>
+											<p>CNS Specialist</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal21" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal21" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/Pan_Singh_Sir-modified.png" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Mr. Pan Singh
+												</a>
+												<p>CNS Specialist</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													Graduation, Electronics and Telecommunication Engineering 1984 Post Graduation, MBA, Financial Management 1994
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												Mr. Pan Singh Negi is one of Creative Group's most experienced team members, with nearly 38 years of expertise in the aviation industry. He holds a bachelor's degree in electronics and telecommunications engineering and served as the Executive Director of the Airport Authority of India, where he was responsible for maintaining and executing best-in-class standards in 165 airports and aeronautical stations while leading 3000 engineers. For 5 years, he also served in the Indian Navy's Aviation wing.
+											</p>
+											<p class="mb-3">
+												Mr. Pan Singh is the CNS specialist navigating the Nepal team in Aviation with Creative Group. He has extensive expertise in the aviation sector in terms of navigation, rules, and regulations.
+											</p>
+											<div class="h5">Professional Certifications/Trainings</div>
+											<ul class="project-list">
+												<li>Management Development from MDI Gurugram, 2019</li>
+												<li>Airport Development in National Institute of Aviation management and Research (NIAMAR), India, 2017</li>
+												<li>Project and Planning Management from International Institute of Project and Program Management Noida (India) and George Washington University (USA), 2014 </li>
+												<li>Wide Area Augmentation System(WAAS) by Federal Aviation Administration (FAA), USA, 2008</li>
+												<li>Satellite Navigation, Civil Aviation Training College, CATC Allahabad</li>
+												<li> Factory training on Thales make ILS, 2001</li>
+												<li> Instrument Landing System (ILS), OSLO Norway,1992</li>
+												<li>Ground adjustments and Flight Inspection, Civil Aviation Training College Allahabad, 1989</li>
+												<li>Electrical Engineering at INS Valsura and Special Aviation Training at Naval Air Technical School Cochin, 1982-84</li>
+												<li>Held proficiency in ILS/DOR/DME/RADAR/A SMGCS/VHF/XBIS System.</li>
+											</ul>
+											<div class="h5">Professional Accreditation (LifeTime Membership) </div>
+											<ul class="project-list">
+												<li>Fellow, Institution of Engineers (India) </li>
+												<li>Fellow, Institution of Electronics and Telecommunication Engineers</li>
+												<li>ber, Aeronautical Society of India</li>
+												<li>Charter Engineer, Institution of Engineers (India)</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/JMS_Negi-modified.png" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal22" class="open-modal">Mr. J.M.S Negi</a>
+											<span class="head-sep"></span>
+											<p>Air Space Design Expert</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal22" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal22" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/JMS_Negi-modified.png" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Mr. J.M.S Negi
+												</a>
+												<p>Air Space Design Expert</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													M.Sc., Physics -1972 B. Sc. Physics, Chemistry, Maths - 1970
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												Mr. Negi possesses more than 37 years of professional experience in Air Traffic Management and Air space design and around 30 years he has worked with Airport Authority of India. He has performed duties as an active Air traffic controller for almost 16 years. He has experience of working as procedural and radar instructor, subject matter expert for development of radar control approach course, rating boards at various radar stations, designing for assisting the implementation of RNAV and Non RNAV.
+											</p>
+											<p class="mb-3">
+												He also has experience assisting the Ministry of Civil Aviation for development of SO 1589(E) and SO 84(E) for the issue of NOC. Developed ILS procedures for defence airfields vig Chakeri, Chandigarh and Srinagar airfields. He has developed ILS procedures for airports with challenging terrain such as Vizag. Dimapur, Tirupati, Lengpui(Aizawl), Imphal, Coimbatore Calicut etc.
+											</p>
+											<p class="mb-3">
+												He has experience of working as an examiner for the rating boards at various radar stations and CATC Allahabad during the service tenure. Designed the SIDs/ STARs for new airports at Hyderabad and Bengaluru. In the case of Bengaluru procedures were developed keeping in view the complexities of airspace issues due to presence of HAL airport and Air Force station Yelahanka.ILS CAT IIIA/IIIB were developed for a new runway (11/29) at IGI airp
+											</p>
+											<div class="h5">Certifications</div>
+											<ul class="project-list">
+												<li>Bachelor of Architecture (1970), School of Planning and Architecture, New Delhi, India</li>
+												<li>Fellowship with Indian Institute of Architects, Mumbai (1980)</li>
+												<li>Fellowship with Institution of Valuers (1987)</li>
+											</ul>
+											<div class="h5">Academic  Positions Held</div>
+											<ul class="project-list">
+												<li>Professor, Director Academics Head, Jamia Mila Islamia, Faculty of Architecture, New Delhi (20022007)</li>
+												<li>Visiting Professor at School of Planning and Architecture, New Delhi (1996-2005)</li>
+												<li>Professor, Vastu Kala Academy of Architecture, New Delhi (19992001)</li>
+												<li>Professor, Apeejay School of Architecture and Planning, Greater Noida</li>
+											</ul>
+											<div class="h5">
+												Other Training:/div>
+												<ul class="project-list">
+													<li>ATC Ab-initio Course, CATC Allahabad, May 1975</li>
+													<li>ATC Refresher Course, CATC Allahabad, October 1976</li>
+													<li>Radar (ASR) Course, CATC Allahabad, October 1982</li>
+													<li>ICAO PANS – OPS Procedure Design Course, SAA Singapore, August 1992</li>
+													<li>ICAO PANS – OPS Refresher Course, SAA Singapore, November 1999</li>
+													<li>ICAO PBN Procedure Design Course 1, New Delhi, June 2008</li>
+													<li>ICAO PBN Instructors Course, ENAC Toulouse France, October 2009</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/Untitled_presentation_(16).jpg" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal23" class="open-modal">Mr. R.K Nirwal</a>
+											<span class="head-sep"></span>
+											<p>Aviation Expert</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal23" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal23" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/Untitled_presentation_(16).jpg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Mr. R.K Nirwal
+												</a>
+												<p>Aviation Expert</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													M. Tech. IIT Delhi Soil Mechanics & Foundation Engineering,1998 LLB Delhi University,1989 AMIE (Civil ) IEI ( Kolkata ),1981 Diploma in Civil Engineering AICTE, K.G. Polytechnic, New Delhi 1978
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												With over 40+ years of experience in Mr. R.K Nirwal is a civil engineer and Lawyer. His expertise lies in Aviation Design, Geo-technical Expert and Runway, Taxiway, Apron Designing. 
+												Mr. Nirwal joined Creative Group LLP as an Aviation Expert and is leading the team with his tremendous experience in the profession. 
+											</p>
+											<div class="h5">Significant Publication</div>
+											<ul class="project-list">
+												<li>Life Cycle Costing of Geo synthetic Reinforced Soil Walls. </li>
+												<li>Comparative Study of use of Polymer Modified Bitumen Vs Ordinary Bitumen of Grade 60/70 in DAC.</li>
+											</ul>
+											<div class="h5">Professional Membership</div>
+											<ul class="project-list">
+												<li>Chartered Engineer –  F-123924-0</li>
+												<li>Fellow of Institution of Engineers India (FIE) </li>
+												<li>Membership No-F-123924-0</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="team-card">
+								<div class="img-wrap">
+									<img src="https://creativegroup.co.in/images/peoples/AG_Joshi_sir-modified.png" class="img-fluid" alt="">
+								</div>
+								<div class="team-detl-block">
+									<div class="team-bio">
+										<div class="team-member">
+											<a href="#people-modal24" class="open-modal">Ar. Anand Gangadhar Joshi</a>
+											<span class="head-sep"></span>
+											<p>Master Plan Expert</p>
+										</div>
+										<div class="social">
+											<ul class="justify-content-center">
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+															<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+															<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+															<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+															<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<a href="#people-modal24" class="crd-btn">
+											Read more
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" xml:space="preserve">
+												<path style="fill:none;stroke-width:3;stroke-miterlimit:10;" d="m12.25 5 11 11-11 11"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div id="people-modal24" class="modal">
+								<div class="modal-content">
+									<a href="#" class="close">x</a>
+									<div class="row row-gap-3">
+										<div class="col-lg-4">
+											<div class="people-img">
+												<img src="https://creativegroup.co.in/images/peoples/AG_Joshi_sir-modified.png" class="img-fluid" alt="">
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="people-detl">
+												<a href="#" class="people-name">
+												Ar. Anand Gangadhar Joshi
+												</a>
+												<p>Master Plan Expert</p>
+												<div class="social">
+													<ul>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+																	<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+																	<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+																	<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+																	<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"></path>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<p>
+													B.(Arch) from Sir J.J. College of Architecture, Mumbai: 1980
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<p class="mb-3">
+												With over 40 years of experience Ar. A.G. Joshi is a graduate in bachelor’s of Architecture from J.J School of Architecture. As Master planner and  Aviation Expert Mr. Joshi is Experienced in master planning and coordinating development activities of airside and city side works including commercial development, NAV-AIDS siting and designing of terminal buildings, cargo terminals, ATC tower & Technical block, Fire station, Utility buildings and other airport infrastructure etc.
+												His efforts have helped to deliver the project from conception to reality. Provided strategic and tactical master planning. Preparation of feasibility study for aviation infrastructure, traffic assessment, site feasibility analysis, Detailed Project reports etc. Liaising and follow up with government agencies, Ministries for project clearance etc.
+											</p>
+											<div class="h5">Expertise</div>
+											<ul class="project-list">
+												<li>Master Planning – Aviation Expert</li>
+												<li>Transportation Infrastructure</li>
+												<li>Sustainability</li>
+												<li>Aviation Demand Forecast</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div class="cta-bg">
+			<div class="container">
+				<div class="row row-gap">
+					<div class="col-lg-6">
+						<div class="small-heading text-white">Work With Us</div>
+						<div class="main-heading mb-0 text-white">Begin Your Customer Journey With Us</div>
+						<a href="contact.html" class="primary-btn hero-btn mt-4">
+							Get Started Today! 
+							<svg width="19" height="19" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"/>
+								<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- cta ends -->
+		<footer>
+			<div class="container">
+				<div class="row row-gap">
+					<div class="col-lg-8">
+						<div class="row row-gap">
+							<div class="col-md-4">
+								<div class="footer-title">Services</div>
+								<ul>
+									<li><a href="firm.html">Origin</a></li>
+									<li><a href="philosophy.html">Philosophy</a></li>
+									<li><a href="founder-message.html">Founder Message</a></li>
+									<li><a href="peoples.html">Peoples</a></li>
+									<li><a href="clients.html">Clients</a></li>
+									<li><a href="awards.html">Awards</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<div class="footer-title">Company</div>
+								<ul>
+									<li><a href="media.html">Media</a></li>
+									<li><a href="news.html">News</a></li>
+									<li><a href="publications.html">Publications</a></li>
+									<li><a href="talks.html">Talks</a></li>
+									<li><a href="resources.html">Resources</a></li>
+									<li><a href="newsletters.html">Newsletter</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<div class="footer-title">Journal</div>
+								<ul>
+									<li><a href="single.html">Single Page</a></li>
+									<li><a href="blog-details.html">Blog Details</a></li>
+									<li><a href="career.html">Careers</a></li>
+									<li><a href="contact.html">Contact us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<form class="footer-form">
+							<div class="top-form">
+								<div class="form-title">Sign up to our Newsletter</div>
+								<p class="mb-0">Stay up-to date with the Latest News, Announcements and Articles</p>
+								<input type="email" name="" placeholder="Enter Email Id*" required>
+								<button class="primary-btn" type="submit">Subscribe Now!</button>
+							</div>
+							<div class="social">
+								<ul>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+												<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+												<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+												<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+												<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"/>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer-btm">© 2024 Creative Group. All Rights Reserved.</div>
+		</footer>
+		<div id="btt-btn">
+			<span id="progress-value">
+				<svg width="15" height="15" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.134.366a1.25 1.25 0 0 0-1.768 0l-6 6a1.25 1.25 0 1 0 1.768 1.768L6 4.268V17.25a1.25 1.25 0 1 0 2.5 0V4.268l3.866 3.866a1.25 1.25 0 0 0 1.768-1.768z" fill="#fff"></path>
+				</svg>
+			</span>
+		</div>
+		<!-- js attached -->
+		<script defer src="assets/js/jquery.js"></script>
+		<script defer src="assets/js/slick.js"></script>
+		<script defer src="assets/js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Media</title>
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-regular.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-100.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-500.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-600.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-700.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-800.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<style>
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 100;
+			src: url('assets/fonts/montserrat-v26-latin-100.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 500;
+			src: url('assets/fonts/montserrat-v26-latin-500.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 600;
+			src: url('assets/fonts/montserrat-v26-latin-600.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 700;
+			src: url('assets/fonts/montserrat-v26-latin-700.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 800;
+			src: url('assets/fonts/montserrat-v26-latin-800.woff2') format('woff2');
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="scrollto">
+					<div class="logo">
+						<a href="index.html">
+						<img src="assets/img/site-logo.svg" class="img-fluid">
+						</a>
+					</div>
+					<div class="header-btn">
+						<a href="contact.html" class="primary-btn">Consult Online Now</a>
+					</div>
+					<div class="menu">
+						<div class="closebtn" onclick="toggleNav()">
+							<svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 384 512" fill="#fff">
+								<path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3l105.4 105.3c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256z"></path>
+							</svg>
+						</div>
+						<nav>
+							<ul>
+								<li class="dropdown">
+									<a href="firm.html">Firm</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="firm.html">Origin</a></li>
+										<li><a href="philosophy.html">Philosphy</a></li>
+										<li><a href="founder-message.html">Founder's Message</a></li>
+										<li><a href="services.html">Services</a></li>
+										<li><a href="peoples.html">People</a></li>
+										<li><a href="clients.html">Clients</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="project.html">Projects</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="airport.html">Airport</a></li>
+									</ul>
+								</li>
+								<li><a href="awards.html">Awards</a></li>
+								<li class="dropdown">
+									<a href="media.html">Media</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="news.html">News</a></li>
+										<li><a href="publications.html">Publications</a></li>
+										<li><a href="talks.html">Talks</a></li>
+										<li><a href="resources.html">Resources</a></li>
+										<li><a href="newsletters.html">Newsletters</a></li>
+									</ul>
+								</li>
+								<li><a href="career.html">Career</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="blog.html">Blog</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="openbtn" onclick="toggleNav()">
+						<svg width="30" height="30" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+							<path d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32m64 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32m384 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32"></path>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header ends -->
+		<div class="hero-inner">
+			<div class="inner-block-img">
+				<img src="assets/img/chennai-aiport.png" class="img-fluid">
+			</div>
+		</div>
+		<!-- hero ends -->
+		<main>
+			<section class="mt-0">
+				<div class="container">
+					<div class="row row-gap align-items-center">
+						<div class="col-lg-5">
+							<div class="inner-page-block">
+								<p class="flexx-breadcrumbs">
+									<span><a href="#">Home</a></span>
+									<span>/</span>
+									<span><a href="#">Media</a></span>
+								</p>
+								<div class="block-title">We give back to the society in more ways than one.</div>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="ps-2">
+								<div class="main-heading">Media</div>
+								<p class="mb-0">We contribute to society through various initiatives, enhancing community well-being and fostering sustainable development.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ends -->
+			<section>
+				<div class="container">
+					<div class="row row-gap">
+						<div class="col-lg-6">
+							<iframe width="100%" height="350" src="https://www.youtube.com/embed/GWycqRqDwLs?si=1s7qblV0OM2HpQmq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+						</div>
+						<div class="col-lg-6">
+							<iframe width="100%" height="350" src="https://www.youtube.com/embed/pDKspXWGGx8?si=CboO9hHUUyHuB2V3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+						</div>
+					</div>
+					<div class="row row-gap bg-py">
+						<div class="col-md-9">
+							<div class="news-cat-name">
+								<span><svg width="30" height="30" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#64aa44"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 2H9l-.35.15-.65.64-.65-.64L7 2H1.5l-.5.5v10l.5.5h5.29l.86.85h.7l.86-.85h5.29l.5-.5v-10zm-7 10.32-.18-.17L7 12H2V3h4.79l.74.74zM14 12H9l-.35.15-.14.13V3.7l.7-.7H14zM6 5H3v1h3zm0 4H3v1h3zM3 7h3v1H3zm10-2h-3v1h3zm-3 2h3v1h-3zm0 2h3v1h-3z"></path></svg></span>News
+							</div>
+						</div>
+						<div class="col-md-3">
+							<a class="primary-btn" href="/news">View All</a>
+						</div>
+					</div>
+					<div class="row row-gap">
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<img src="https://creativegroup.co.in/images/news/7.jpg" class="img-fluid">
+								<div class="resources-card-content">
+									<a href="https://creativegroup.co.in/pdf/news/jpg3pdf.pdf" class="crd-title ellipsis">
+										Over 500 pilgrims visit Kartarpur as Modi inaugurates corridor, Sidhu sends PM hug from Pakistan
+									</a>
+									<div class="flexx-download">
+										<p>India Today</p>
+										<p>10 Nov 2019</p>
+		            				</div>
+		                				<a href="https://creativegroup.co.in/pdf/news/jpg3pdf.pdf" download="" class="down-btn">Download PDF<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path></svg></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<img src="https://creativegroup.co.in/images/news/3Untitled-2.jpg" class="img-fluid">
+								<div class="resources-card-content">
+									<a href="https://creativegroup.co.in/pdf/news/81520105_2615547052013240_8255795950371471360_n.pdf" class="crd-title ellipsis">Keeladi Exhibition in Thanjavur</a>
+									<div class="flexx-download">
+										<p>Deccan Chronicle</p>
+										<p>04 Jan 2020</p>
+		            				</div>
+		            				<a href="https://creativegroup.co.in/pdf/news/81520105_2615547052013240_8255795950371471360_n.pdf" class="down-btn" download="">Download PDF<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path></svg></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row row-gap bg-py">
+						<div class="col-md-9">
+							<div class="news-cat-name">
+								<span><svg width="30" height="30" fill="#64aa44" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.537 98.537" xml:space="preserve"><path d="M49.271 27.057c-19.052 0-34.549 15.499-34.549 34.549 0 19.051 15.497 34.549 34.549 34.549 19.047 0 34.543-15.498 34.543-34.549.001-19.05-15.495-34.549-34.543-34.549M27.449 79.443c-3.566-4.17-5.769-9.148-6.42-14.498h8.501c.23 4.233.854 8.25 1.878 11.955a29.6 29.6 0 0 0-3.959 2.543m2.081-21.176h-8.501c.652-5.35 2.849-10.322 6.414-14.485a29.4 29.4 0 0 0 3.965 2.54c-1.024 3.701-1.658 7.709-1.878 11.945m2.843 25.743c.435-.275.866-.543 1.308-.789q.569 1.255 1.195 2.407a27 27 0 0 1-2.503-1.618m1.314-44.03a22 22 0 0 1-1.314-.778 27 27 0 0 1 2.503-1.611 33 33 0 0 0-1.189 2.389m12.54 48.713c-2.537-1.244-4.887-3.989-6.774-7.904a33.6 33.6 0 0 1 6.774-1.281zm0-15.877c-3.171.224-6.204.789-9.06 1.691-.82-2.997-1.341-6.209-1.556-9.562h10.616zm0-14.549H35.611c.215-3.346.736-6.556 1.55-9.563 2.862.896 5.9 1.467 9.065 1.693zm0-14.564c-2.344-.2-4.61-.633-6.774-1.282 1.887-3.925 4.237-6.664 6.774-7.908zm6.087-9.187c2.529 1.241 4.881 3.979 6.764 7.898a33.2 33.2 0 0 1-6.764 1.281zm0 54.177v-9.186c2.347.199 4.626.632 6.77 1.275-1.883 3.926-4.236 6.671-6.77 7.911m9.057-14.177c-2.85-.906-5.895-1.473-9.057-1.699v-7.871h10.613c-.212 3.353-.732 6.565-1.556 9.57m-9.057-16.249v-7.87c3.174-.221 6.207-.793 9.057-1.692.824 3.001 1.344 6.211 1.557 9.562zM63.67 85.622c.409-.751.807-1.552 1.182-2.382.466.259.896.518 1.306.771a27 27 0 0 1-2.488 1.611m1.194-45.63a39 39 0 0 0-1.194-2.401 30 30 0 0 1 2.5 1.611 37 37 0 0 1-1.306.79m6.226 39.441a28.6 28.6 0 0 0-3.959-2.541c1.023-3.702 1.648-7.713 1.869-11.946h8.512c-.655 5.343-2.857 10.321-6.422 14.487m-2.091-21.166c-.221-4.229-.852-8.243-1.875-11.964a30.4 30.4 0 0 0 3.958-2.54c3.573 4.17 5.775 9.147 6.428 14.504z"></path><path d="M78.811 17.467a2.45 2.45 0 0 1-1.76-.981c-4.016-5.436-10.465-8.789-17.326-8.789q-.655 0-1.31.04a2.43 2.43 0 0 1-1.616-.489 24 24 0 0 0-14.537-4.865 24.13 24.13 0 0 0-21.843 13.838 2.44 2.44 0 0 1-1.873 1.376C8.082 19.053 0 28.059 0 38.918c0 8.015 4.412 15.007 10.927 18.712a38.2 38.2 0 0 1 2.018-8.912c-2.729-2.392-4.464-5.894-4.464-9.8 0-7.193 5.852-13.044 13.045-13.044.363 0 .72.029 1.076.058a4.245 4.245 0 0 0 4.455-3.195 15.66 15.66 0 0 1 15.206-11.872c4.113 0 8.006 1.588 10.961 4.472a4.24 4.24 0 0 0 3.826 1.116c.881-.182 1.78-.275 2.676-.275 5.035 0 9.533 2.831 11.736 7.388a4.23 4.23 0 0 0 4.239 2.375c.44-.044.881-.066 1.31-.066 7.192 0 13.045 5.851 13.045 13.044 0 3.906-1.734 7.408-4.463 9.8a38.3 38.3 0 0 1 2.018 8.911c6.515-3.704 10.926-10.697 10.926-18.711-.001-11.263-8.695-20.534-19.726-21.452"></path></svg></span>Publications
+							</div>
+						</div>
+						<div class="col-md-3">
+							<a class="primary-btn" href="/publications">View All</a>
+						</div>
+					</div>
+					<div class="row row-gap">
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<img src="https://creativegroup.co.in/images/books/imgonline-com-ua-resize-96EK66nQMtQ4jt.jpg" class="img-fluid">
+								<div class="resources-card-content">
+									<a href="https://creativegroup.co.in/pdf/articles/GLITZ_architecture_&amp;_interiors_Digital_issue_(January-_2024).pdf" class="crd-title ellipsis">GLITZ architecture interiors Digital issue January-2024.</a>
+									<div class="flexx-download">
+										<p>Glitz</p>
+										<p>Jan 2024</p>
+		            				</div>
+		                				<a href="https://creativegroup.co.in/pdf/articles/GLITZ_architecture_&amp;_interiors_Digital_issue_(January-_2024).pdf" class="down-btn" download="">Download PDF<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path></svg></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<img src="https://creativegroup.co.in/images/books/STEEL.jpg" class="img-fluid">
+								<div class="resources-card-content">
+									<div class="crd-title ellipsis">Evolution &amp; Usage of Steel</div>
+									<div class="flexx-download">
+										<p>Prof. Charanjit Singh Shah</p>
+		            				</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row row-gap bg-py">
+						<div class="col-md-9">
+							<div class="news-cat-name">
+								<span><svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 1H1v18h18V1zm14 2v14H3V3zm4 18H5v2h18V5h-2zM15 5H5v2h10zM5 9h10v2H5zm7 4H5v2h7z" fill="#64aa44"></path></svg>
+								</span>Talks
+							</div>
+						</div>
+						<div class="col-md-3">
+							<a class="primary-btn " href="/talks">View All</a>
+						</div>
+					</div>
+					<div class="row row-gap">
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<img src="https://creativegroup.co.in/images/talks/thumb/IMG_0596.JPG" class="img-fluid">
+								<div class="resources-card-content">
+									<a href="#" class="crd-title ellipsis">Guest Lecture at Chandigarh University</a>
+									<div class="flexx-download">
+										<p>Chandigarh University</p>
+										<p>21 Jan 2020</p>
+		            				</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<img src="https://creativegroup.co.in/images/talks/thumb/ibc.jpg" class="img-fluid">
+								<div class="resources-card-content">
+									<a href="#" class="crd-title ellipsis">IBC Paper Presentation 'Development of New Greenfield Townships'</a>
+									<div class="flexx-download">
+										<p>Vigyan Bhawan</p>
+										<p>07 Jan 2020</p>
+		            				</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div class="cta-bg">
+			<div class="container">
+				<div class="row row-gap">
+					<div class="col-lg-6">
+						<div class="small-heading text-white">Work With Us</div>
+						<div class="main-heading mb-0 text-white">Begin Your Customer Journey With Us</div>
+						<a href="contact.html" class="primary-btn hero-btn mt-4">
+							Get Started Today! 
+							<svg width="19" height="19" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"/>
+								<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- cta ends -->
+		<footer>
+			<div class="container">
+				<div class="row row-gap">
+					<div class="col-lg-8">
+						<div class="row row-gap">
+							<div class="col-md-4">
+								<div class="footer-title">Services</div>
+								<ul>
+									<li><a href="firm.html">Origin</a></li>
+									<li><a href="philosophy.html">Philosophy</a></li>
+									<li><a href="founder-message.html">Founder Message</a></li>
+									<li><a href="peoples.html">Peoples</a></li>
+									<li><a href="clients.html">Clients</a></li>
+									<li><a href="awards.html">Awards</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<div class="footer-title">Company</div>
+								<ul>
+									<li><a href="media.html">Media</a></li>
+									<li><a href="news.html">News</a></li>
+									<li><a href="publications.html">Publications</a></li>
+									<li><a href="talks.html">Talks</a></li>
+									<li><a href="resources.html">Resources</a></li>
+									<li><a href="newsletters.html">Newsletter</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<div class="footer-title">Journal</div>
+								<ul>
+									<li><a href="single.html">Single Page</a></li>
+									<li><a href="blog-details.html">Blog Details</a></li>
+									<li><a href="career.html">Careers</a></li>
+									<li><a href="contact.html">Contact us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<form class="footer-form">
+							<div class="top-form">
+								<div class="form-title">Sign up to our Newsletter</div>
+								<p class="mb-0">Stay up-to date with the Latest News, Announcements and Articles</p>
+								<input type="email" name="" placeholder="Enter Email Id*" required>
+								<button class="primary-btn" type="submit">Subscribe Now!</button>
+							</div>
+							<div class="social">
+								<ul>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+												<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+												<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+												<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+												<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"/>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer-btm">© 2024 Creative Group. All Rights Reserved.</div>
+		</footer>
+		<div id="btt-btn">
+			<span id="progress-value">
+				<svg width="15" height="15" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.134.366a1.25 1.25 0 0 0-1.768 0l-6 6a1.25 1.25 0 1 0 1.768 1.768L6 4.268V17.25a1.25 1.25 0 1 0 2.5 0V4.268l3.866 3.866a1.25 1.25 0 0 0 1.768-1.768z" fill="#fff"></path>
+				</svg>
+			</span>
+		</div>
+		<!-- js attached -->
+		<script defer src="assets/js/jquery.js"></script>
+		<script defer src="assets/js/slick.js"></script>
+		<script defer src="assets/js/main.js"></script>
+	</body>
+</html>

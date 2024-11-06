@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Articles</title>
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-regular.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-100.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-500.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-600.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-700.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<link rel="preload" href="assets/fonts/montserrat-v26-latin-800.woff2" fetchpriority="highest" as="font" crossorigin="">
+		<style>
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 100;
+			src: url('assets/fonts/montserrat-v26-latin-100.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 500;
+			src: url('assets/fonts/montserrat-v26-latin-500.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 600;
+			src: url('assets/fonts/montserrat-v26-latin-600.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 700;
+			src: url('assets/fonts/montserrat-v26-latin-700.woff2') format('woff2');
+			}
+			@font-face {
+			font-display: swap;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 800;
+			src: url('assets/fonts/montserrat-v26-latin-800.woff2') format('woff2');
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="scrollto">
+					<div class="logo">
+						<a href="index.html">
+						<img src="assets/img/site-logo.svg" class="img-fluid">
+						</a>
+					</div>
+					<div class="header-btn">
+						<a href="contact.html" class="primary-btn">Consult Online Now</a>
+					</div>
+					<div class="menu">
+						<div class="closebtn" onclick="toggleNav()">
+							<svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 384 512" fill="#fff">
+								<path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3l105.4 105.3c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256z"></path>
+							</svg>
+						</div>
+						<nav>
+							<ul>
+								<li class="dropdown">
+									<a href="firm.html">Firm</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="firm.html">Origin</a></li>
+										<li><a href="philosophy.html">Philosphy</a></li>
+										<li><a href="founder-message.html">Founder's Message</a></li>
+										<li><a href="services.html">Services</a></li>
+										<li><a href="peoples.html">People</a></li>
+										<li><a href="clients.html">Clients</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="project.html">Projects</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="airport.html">Airport</a></li>
+									</ul>
+								</li>
+								<li><a href="awards.html">Awards</a></li>
+								<li class="dropdown">
+									<a href="media.html">Media</a>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12" height="14" fill="#fff">
+										<path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+									</svg>
+									<ul>
+										<li><a href="news.html">News</a></li>
+										<li><a href="publications.html">Publications</a></li>
+										<li><a href="talks.html">Talks</a></li>
+										<li><a href="resources.html">Resources</a></li>
+										<li><a href="newsletters.html">Newsletters</a></li>
+									</ul>
+								</li>
+								<li><a href="career.html">Career</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="blog.html">Blog</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="openbtn" onclick="toggleNav()">
+						<svg width="30" height="30" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+							<path d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32m64 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32m384 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32"></path>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header ends -->
+		<div class="hero-inner">
+			<div class="inner-block-img">
+				<img src="assets/img/nagpur.png" class="img-fluid">
+			</div>
+		</div>
+		<!-- hero ends -->
+		<main>
+			<section class="mt-0">
+				<div class="container">
+					<div class="row row-gap align-items-center">
+						<div class="col-lg-5">
+							<div class="inner-page-block">
+								<p class="flexx-breadcrumbs">
+									<span><a href="#">Home</a></span>
+									<span>/</span>
+									<span><a href="#">Articles</a></span>
+								</p>
+								<div class="block-title">The pen will always remain mighter than a sword.</div>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="ps-2">
+								<div class="main-heading">Articles</div>
+								<p class="mb-0">We at Creative Group strive towards a conscious design thought by communicating to the larger audience through modern media.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ends -->
+			<section>
+				<div class="container">
+					<div class="row row-gap">
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/imgonline-com-ua-resize-96EK66nQMtQ4jt.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									GLITZ architecture &amp; interiors Digital issue January-2024. 
+									</a>
+									<div class="flexx-download">
+										<p>Glitz</p>
+										<p>2024</p>
+									</div>
+									<a href="pdf/articles/GLITZ_architecture_&amp;_interiors_Digital_issue_(January-_2024).pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/2GLITZZZ.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Kartarpur Coridor
+									</a>
+									<div class="flexx-download">
+										<p>GLITZ</p>
+										<p>2021</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/13.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Aluminium Facades for Enhanced Building Performance
+									</a>
+									<div class="flexx-download">
+										<p>Ace Update</p>
+										<p>September 2019</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/ACE_Update_-_Aluminium.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/12.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Intermodality and Last mile Connectivity
+									</a>
+									<div class="flexx-download">
+										<p>NBM &amp; CW Magazine</p>
+										<p>October 2018</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/jpg2pdf.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/11.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Redevelopment of Charbagh Railway Stations, Lucknow
+									</a>
+									<div class="flexx-download">
+										<p class="mb-0">Steel Structures and Metal Buildings (SSMB) Magazine</p>
+										<p>August 2019</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/1jpg4pdf.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/9.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Green Building and Sustainability 
+									</a>
+									<div class="flexx-download">
+										<p>CIA World Magazine</p>
+										<p>September 2019</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/CIA_World_August-September_2019_001-converted.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/cover.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Redefining Urbanity
+									</a>
+									<div class="flexx-download">
+										<p>NBM &amp; CW</p>
+										<p>August 2019</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Redefining_Urbanity.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/3_cover.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Charismatic Chiseling of Charbagh, Lucknow
+									</a>
+									<div class="flexx-download">
+										<p>GLITZ</p>
+										<p>Aug 2018</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/xx.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/2_cover.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									NATCON 2017 Bhubaneshwar
+									</a>
+									<div class="flexx-download">
+										<p>GLITZ</p>
+										<p>Jan 2018</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/combinepdf_(1).pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/1_cover.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Reinvigoration of Purani Dilli from Fumes 
+									</a>
+									<div class="flexx-download">
+										<p>GLITZ</p>
+										<p>Aug 2018</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/combinepdf.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/CT_June2016_Thumbnail.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Sansar Housing - Recreate your world
+									</a>
+									<div class="flexx-download">
+										<p>Construction Technology </p>
+										<p>June 2016</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/CT_June2016_PDF_Small.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Decorama__May_2016_Thumbnail.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Capitalising on Change 
+									</a>
+									<div class="flexx-download">
+										<p>Destination Worldwide- travel &amp; tourism magazine</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/city_scape.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/CIA_April_May_16_Thumbnail.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Prof. Charanjit Shah - The Man Behind Creative Group
+									</a>
+									<div class="flexx-download">
+										<p>CIA World</p>
+										<p>Apr May 2016</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/CIA_World_Apr-May_2016_Compressed.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/NBM_CW_May_2016_Thumbnail.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Urban Issues and Architectural Interventions 
+									</a>
+									<div class="flexx-download">
+										<p>NBM &amp; CW</p>
+										<p>May 2016</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/NBM_CW_May_2016.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Thumbnail_SSMB_April_2016.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Skyone Tower, Gurgaon 
+									</a>
+									<div class="flexx-download">
+										<p>Steel Structures &amp; Metal Buildings</p>
+										<p>April 2016</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/SSMB_April_2016.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Thumbnail_-_SSMB_CTB_2016.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Steel Structures and Metal Buildings 2016 Coffee Table Book
+									</a>
+									<div class="flexx-download">
+										<p>MX Media</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/PDF_-_Coffee_Table_SSMB_2016_SMALL_SIZE.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/SSMB_Feb_2016.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Goa Integrated Terminal Building, Dabolim
+									</a>
+									<div class="flexx-download">
+										<p class="mb-0">Steel Structures and Metal Buildings </p>
+										<p>February 2016</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Goa_Airport_-_SSMB_Feb_2016.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Website_Thumbnail_-_W&amp;F.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Efficient Facades for Airports
+									</a>
+									<div class="flexx-download">
+										<p>Windows &amp; Facades Year End Special</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/W&amp;F_Year_end_special.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Buildotech_2016_Jan.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Architects with Un-borrowed Vision
+									</a>
+									<div class="flexx-download">
+										<p>Buildotech</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/For_Website.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/SSMB_Nov_Thumbnail.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Steel Structure and Metal Buildings November 2015
+									</a>
+									<div class="flexx-download">
+										<p>MX Media</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/SSMB_November.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/SSMB_DECEMBER.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Steel Structures &amp; Metal Buildings December 2015 
+									</a>
+									<div class="flexx-download">
+										<p>MX Media</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/SSMB_DEC_2015.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Decorama_Thumbnail.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Sustainability is a way of life - Ar. Gurpreet Shah 
+									</a>
+									<div class="flexx-download">
+										<p>Decorama World Magazine</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/sustainability__sept.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Website_-_MX_Media.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Metro Station at Chennai Airport
+									</a>
+									<div class="flexx-download">
+										<p>Steel Structures and Metal Buildings </p>
+										<p>October 2015</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/MX_Media_Oct_2015.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Infra_Live_Cover_-_website.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Smart Cities
+									</a>
+									<div class="flexx-download">
+										<p>Infra Live </p>
+										<p>October 2015</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Binder_-_InfraLive.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/SSMB_Aug_2015_-_Thumbnail.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Times Square Mall, Naya Raipur
+									</a>
+									<div class="flexx-download">
+										<p>Steel Structures and Metal Buildings</p>
+										<p>August 2015</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/SSMB_Aug_2015_(2).pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/CTimes_-_July_2015.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									An Aesthetic Marvel in Naya Raipur
+									</a>
+									<div class="flexx-download">
+										<p>Construction Times</p>
+										<p>July 2015</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/CT_-_Times_Square_-_July_2015.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/CM_-_Aug_2015.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Indian Traditional Architecture
+									</a>
+									<div class="flexx-download">
+										<p>Construction Mirror</p>
+										<p>August 2015</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Construction_Mirror_-_Aug_Issue_'15.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/DD_Cover_-_Aug_2015.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									A Bestowal to the Smart City - Creative Group's Bold New Design 
+									</a>
+									<div class="flexx-download">
+										<p>Design Detail</p>
+										<p>August 2015</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/DD_Resized_-_Aug_2015.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Website_Image_-_CC.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									A Tribute to Charles Correa
+									</a>
+									<div class="flexx-download">
+										<p>Architecture+Design</p>
+										<p>August 2015</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Website_-_Charles_Correa.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/ACE_Bulletin_-_Menu.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Times Square Mall - A Mall that breathes without Air Conditioning
+									</a>
+									<div class="flexx-download">
+										<p>The ACE Bulletin - Newsletter</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/ACE_Website.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/CM_-_Soni.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Soni Hospital (Healing Design - The Best Medicine) 
+									</a>
+									<div class="flexx-download">
+										<p>Construction Mirror</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Website_Version.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/DD_-_Menu_Image.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									GEMS School - A School in the Lap of Nature
+									</a>
+									<div class="flexx-download">
+										<p>Design Detail</p>
+										<p>31 Dec 1976</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Gems_-_DD.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/A+D_-_Website_Menu.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Redefining Smart and Sustainable Indian Cities
+									</a>
+									<div class="flexx-download">
+										<p>Architecture + Design (A+D)</p>
+										<p>July 2015</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/A+D_-_SC_Website.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/CIA_World_-_Thumbnail_Image.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Redefining Architecture Through Sustainability
+									</a>
+									<div class="flexx-download">
+										<p>CIA World Magazine</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/26.06.2015_-_Website.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/CT_Times_Square_-_Thumbnail.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Times Square Mall - Creative Group's Bold New Design
+									</a>
+									<div class="flexx-download">
+										<p>Construction Technology</p>
+										<p>31 Dec 1976</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Construction_Technology_-_Times_Square_Mall_-_Website.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Creative_Group_-_FINAL_1(2).jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Exclusive Coverage On Creative Group - Smart and Sustainable Airport Designs
+									</a>
+									<div class="flexx-download">
+										<p>NBM&amp;CW</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Creative_Group_-_FINAL2.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/06.06.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Smart Sustainable Airport Designs
+									</a>
+									<div class="flexx-download">
+										<p>ACE Update</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Ace_Update.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/HIGHWAY_VIEW_DAY.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Ar. Gurpreet Shah - Online Coverage
+									</a>
+									<div class="flexx-download">
+										<p>www.mgsarchitecture.in</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/1Binder1.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Cover.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Design Trends in Tier II and Tier III cities
+									</a>
+									<div class="flexx-download">
+										<p>CW Interiors</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/CW.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/3Website.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Skyone Tower - Cg designs an icon in the sky
+									</a>
+									<div class="flexx-download">
+										<p>Construction Technology</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Binder2.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/2Website.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Emergent Indian Architects - Ar. Gurpreet Shah
+									</a>
+									<div class="flexx-download">
+										<p>MGS Architecture</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Website.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/1Website.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Raipur Airport - An Environmentally Sustainable Abode
+									</a>
+									<div class="flexx-download">
+										<p>Abraxas Lifestyle </p>
+										<p>April 2015</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Final_Article.PDF" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Thumbnail_Image.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Style Class Design in Steel - Coffee Table Book
+									</a>
+									<div class="flexx-download">
+										<p>MX Media</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Website_PDF.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Website_Menu.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Skyone Tower -
+									</a>
+									<div class="flexx-download">
+										<p>Construction Times</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/CT_Skyone.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Website_Cover.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									A friend, A Gem of a human being - Prof. Charanjit Shah
+									</a>
+									<div class="flexx-download">
+										<p>ArchiDesign Perspective</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/June_2005.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Case-Study.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Case Study on Roofing of Raipur Airport
+									</a>
+									<div class="flexx-download">
+										<p>Construction World</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Website_pdf.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Website.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Architectural Education in the wake of Globalization
+									</a>
+									<div class="flexx-download">
+										<p>Architecture + Design</p>
+										<p>Nov 2004</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Final_Article.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/SVIA_-_final_1.jpg2pdf" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									New Integrated Terminal Building, Swami Vivekananda International Airport
+									</a>
+									<div class="flexx-download">
+										<p>Steel Structure and Metal Buildings</p>
+										<p>MX Media</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/SVIA_website.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Times_Square_Mall.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Times Square Mall, Naya Raipur
+									</a>
+									<div class="flexx-download">
+										<p class="mb-0">Construction Infrastructure Architecture World Magazine</p>
+										<p>15 Jan</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Times_Square_Mall.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/The-Kongu-Convention.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									The Kongu Convention Centre
+									</a>
+									<div class="flexx-download">
+									<p class="mb-0">Construction Infrastructure Architecture World Magazine</p>
+									<p>15 Jan</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Kongu_.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/GEMS_School.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									GEMS School
+									</a>
+									<div class="flexx-download ">
+										<p class="mb-0">Construction Infrastructure Architecture World Magazine</p>
+										<p>15 Jan</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Gems_-_CIA2.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Abraxas_Cover.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Luxury Design - Chennai International Airport
+									</a>
+									<div class="flexx-download">
+										<p>Abraxas Lifestyle</p>
+										<p>January 2014</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Abraxas_Lifestyle_Jan_'_14.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Free_Flowing_Avian-1.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Raipur Airport - Free Flowing Avian
+									</a>
+									<div class="flexx-download">
+										<p>Design Matrix</p>
+										<p>January 2015</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Untitled-1.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Article_published_1.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									ACE Update Magazine - January 2015 Issue
+									</a>
+									<div class="flexx-download">
+										<p>Prof. Charanjit S. Shah</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Article_published.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Constructions_Products_in_India_thumb2.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Construction Products_Second Edition
+									</a>
+									<div class="flexx-download">
+									<p class="mb-0">Evolution of Foundation Systems_Prof. Shah</p>
+									<p>31 Dec 1976</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Const._Products_SecondEdition.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Construction_Produects_in_India_thumb.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Construction Products_Third Edition
+									</a>
+									<div class="flexx-download">
+										<p>Pipes &amp; Plumbing_Prof. Shah</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Const._Products_ThirdEdition.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Sourcing_Hardware_thumb.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Sourcing Hardware- Plumbing Pipes
+									</a>
+									<div class="flexx-download">
+										<p>Expert Opinion by Prof. Shah</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Sourcing_Hardware.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Rebecca_thumb.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Guidelines For Engineering Services
+									</a>
+									<div class="flexx-download">
+										<p>Rebecca Homes- Real Estate Explorer</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/RebeccaHomes.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/chennai_3.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Mega Project Realised, Creative Group Designs Chennai Airport
+									</a>
+									<div class="flexx-download">
+										<p>Times Of India</p>
+										<!-- <span>31-Dec-1976</<s></s>pan> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Times_of_India_Chennai_Jan_2013.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/goan.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									New Terminals will be a strong first and last impression for the visitors
+									</a>
+									<div class="flexx-download">
+										<p>The Goan</p>
+										<p> 30 November 2013</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/terminal_velocity.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/sustainable.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Towards Sustainable Development
+									</a>
+									<div class="flexx-download">
+										<p class="mb-0">Construction Infrastructure Architect World</p>
+										<p>April May 2013</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/CIA_Publication_May'13.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/Untitled-1.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									India: Boom Or Bust
+									</a>
+									<div class="flexx-download">
+										<p>Architectural Record</p>
+										<p>December 2013</p>
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/articles-01.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Chennai Airport-An innovative Model of Engineering
+									</a>
+									<div class="flexx-download">
+										<p>Archidesign Perspective</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Chennai-Archi-Design-Perspective.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/articles-02.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Goa Airport Terminal The "Wave"
+									</a>
+									<div class="flexx-download">
+										<p>Archidesign Perspective</p>
+										<!-- <span>31-Dec-1976</span> -->
+									</div>
+									<a href="https://creativegroup.co.in/pdf/articles/Goa-Archidesign-Perspective.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/articles-03.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Raipur Airport Designed to offer best ambience to the Passengers
+									</a>
+									<a href="https://creativegroup.co.in/pdf/articles/Raipur_Archidesign-Perspective.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/articles-05.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Vadodra Airport, Galloping into the Future
+									</a>
+									<a href="https://creativegroup.co.in/pdf/articles/Vodadara-Airports-Magazine.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/articles-04.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									The Way Forward Beyond Net Zero
+									</a>
+									<a href="https://creativegroup.co.in/pdf/articles/The-Way-Forward-Beyond-Net-Zero.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="flexx-newsletters-card-grid">
+								<a href="#"><img src="https://creativegroup.co.in/images/books/articles-06.jpg" class="img-fluid"></a>
+								<div class="resources-card-content">
+									<a href="" class="crd-title ellipsis">
+									Article on Green Buildings
+									</a>
+									<a href="https://creativegroup.co.in/pdf/articles/Article-on-green-buildings.pdf" target="_blank" download="" class="down-btn">
+										Download PDF
+										<svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path fill="#64aa44" fill-rule="evenodd" d="M14 9a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a1 1 0 0 1 2 0v3h10v-3a1 1 0 0 1 1-1M8 1a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414L8 10.414 4.293 6.707a1 1 0 0 1 1.414-1.414L7 6.586V2a1 1 0 0 1 1-1"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div class="cta-bg">
+			<div class="container">
+				<div class="row row-gap">
+					<div class="col-lg-6">
+						<div class="small-heading text-white">Work With Us</div>
+						<div class="main-heading mb-0 text-white">Begin Your Customer Journey With Us</div>
+						<a href="contact.html" class="primary-btn hero-btn mt-4">
+							Get Started Today! 
+							<svg width="19" height="19" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"/>
+								<path fill-rule="evenodd" d="M11.707 4.293 15.414 8l-3.707 3.707a1 1 0 0 1-1.414-1.414L11.586 9H2a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 1 1 1.414-1.414"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- cta ends -->
+		<footer>
+			<div class="container">
+				<div class="row row-gap">
+					<div class="col-lg-8">
+						<div class="row row-gap">
+							<div class="col-md-4">
+								<div class="footer-title">Services</div>
+								<ul>
+									<li><a href="firm.html">Origin</a></li>
+									<li><a href="philosophy.html">Philosophy</a></li>
+									<li><a href="founder-message.html">Founder Message</a></li>
+									<li><a href="peoples.html">Peoples</a></li>
+									<li><a href="clients.html">Clients</a></li>
+									<li><a href="awards.html">Awards</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<div class="footer-title">Company</div>
+								<ul>
+									<li><a href="media.html">Media</a></li>
+									<li><a href="news.html">News</a></li>
+									<li><a href="publications.html">Publications</a></li>
+									<li><a href="talks.html">Talks</a></li>
+									<li><a href="resources.html">Resources</a></li>
+									<li><a href="newsletters.html">Newsletter</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<div class="footer-title">Journal</div>
+								<ul>
+									<li><a href="single.html">Single Page</a></li>
+									<li><a href="blog-details.html">Blog Details</a></li>
+									<li><a href="career.html">Careers</a></li>
+									<li><a href="contact.html">Contact us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<form class="footer-form">
+							<div class="top-form">
+								<div class="form-title">Sign up to our Newsletter</div>
+								<p class="mb-0">Stay up-to date with the Latest News, Announcements and Articles</p>
+								<input type="email" name="" placeholder="Enter Email Id*" required>
+								<button class="primary-btn" type="submit">Subscribe Now!</button>
+							</div>
+							<div class="social">
+								<ul>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+												<path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+												<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+												<path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="15">
+												<path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3M232.2 337.6V175.2l142.7 81.2z"/>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer-btm">© 2024 Creative Group. All Rights Reserved.</div>
+		</footer>
+		<div id="btt-btn">
+			<span id="progress-value">
+				<svg width="15" height="15" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.134.366a1.25 1.25 0 0 0-1.768 0l-6 6a1.25 1.25 0 1 0 1.768 1.768L6 4.268V17.25a1.25 1.25 0 1 0 2.5 0V4.268l3.866 3.866a1.25 1.25 0 0 0 1.768-1.768z" fill="#fff"></path>
+				</svg>
+			</span>
+		</div>
+		<!-- js attached -->
+		<script defer src="assets/js/jquery.js"></script>
+		<script defer src="assets/js/slick.js"></script>
+		<script defer src="assets/js/main.js"></script>
+	</body>
+</html>
